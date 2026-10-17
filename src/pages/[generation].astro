@@ -17,26 +17,25 @@ const { category } = Astro.props as { category: Category };
 ---
 
 <Layout title={category.name}>
-  <main>
+  <main class="md:px-12 px-4">
     <div class="min-h-screen flex flex-col justify-center gap-8">
-      <a href="/" class="flex items-center text-primary text-xl"
+      <a href="/" class="flex items-center text-primary sm:text-xl text-base"
         ><ChevronLeft />Zpět na úvod</a
       >
       <h1>{category.name}</h1>
       <div
-        class="text-xl indent-12 max-w-2xl text-justify text-primary"
+        class="sm:text-xl text-base indent-12 max-w-2xl text-justify text-primary"
         set:html={category.description}
       />
     </div>
 
-    <section class="flex gap-24 flex-col">
+    <section class="flex gap-24 flex-col mb-24">
       {
         category.computers.map((item, index) => {
+          // karty zmeni poradi, kdyz jsou liche
           const shouldFlip: boolean = index % 2 == 1;
 
-          return (
-            <ComputerItem computer={item} shouldFlip={shouldFlip} />
-          );
+          return <ComputerItem computer={item} shouldFlip={shouldFlip} />;
         })
       }
     </section>
