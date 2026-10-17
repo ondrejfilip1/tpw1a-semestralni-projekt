@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import projectData from "../data/data.json";
+import type { Category, JSONData } from "../data/data";
+import { ChevronLeft } from "lucide-react";
+import ComputerItem from "../components/ComputerItem";
+
+export function getStaticPaths() {
+  const { categories } = projectData as JSONData;
+  return categories.map((item) => ({
+    params: { generation: item.generation },
+    props: { category: item },
+  }));
+}
+
+const { category } = Astro.props as { category: Category };
+---
+
+<Layout title={category.name}>
+  <main>
+    <div class="min-h-screen flex flex-col justify-center gap-8">
+      <a href="/" class="flex items-center text-primary text-xl"
+        ><ChevronLeft />Zpět na úvod</a
+      >
+      <h1>{category.name}</h1>
+      <div
+        class="text-xl indent-12 max-w-2xl text-justify text-primary"
+        set:html={category.description}
+      />
+    </div>
+
+    <section class="flex gap-24 flex-col">
+      {
+        category.computers.map((item, index) => {
+          const shouldFlip: boolean = index % 2 == 1;
+
+          return (
+            <ComputerItem computer={item} shouldFlip={shouldFlip} />
+          );
+        })
+      }
+    </section>
+  </main>
+</Layout>

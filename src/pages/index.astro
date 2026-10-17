@@ -1,16 +1,17 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import CategoriesSelector from "../components/CategoriesSelector";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <div
+    class="min-h-screen flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-12 px-4 md:gap-12 gap-4"
+  >
+    <div class="md:w-[70%] md:text-left text-center">
+      <h1>Historie<br />počítačů</h1>
+    </div>
+    <div class="md:w-[30%] flex flex-col gap-6">
+      <h2 class="font-sans">Generace</h2><CategoriesSelector />
+    </div>
+  </div>
+</Layout>

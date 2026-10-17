@@ -1,0 +1,388 @@
+{
+  "categories": [
+    {
+      "generation": "nulta",
+      "name": "Nultá generace",
+      "description": "<p>Ještě než přišla elektronika, počítalo se ozubenými koly, hřídelemi a později elektromagnetickými relé. Takovým strojům se říká nultá generace. Byly hlučné, pomalé a často velké jako obývák, ale už v nich najdeme to podstatné: program oddělený od dat, paměť a jednotku, která provádí výpočty.</p><p>Období se obvykle počítá zhruba do poloviny 40. let 20. století. Relé se ale používala i později, například v prvním československém počítači SAPO, který Antonín Svoboda dokončil v roce 1957 a který o tři roky později shořel.</p>",
+      "computers": [
+        {
+          "name": "Analytický stroj",
+          "year": 1837,
+          "image": {
+            "src": "/categories/nulta/analyticky-stroj.webp",
+            "alt": "Zkušební model části Babbageova analytického stroje se svislými sloupci ozubených kol"
+          },
+          "description": "Mechanický počítač, který Charles Babbage navrhl, ale nikdy nedokončil. Přesto v něm byly všechny části dnešního počítače.",
+          "article": {
+            "heading": "Analytický stroj: počítač, který se nikdy nepostavil",
+            "article": "<p>Charles Babbage byl anglický matematik, kterého neskutečně štvaly chyby v tištěných tabulkách logaritmů. Nejdřív navrhl takzvaný diferenční stroj, který měl tabulky počítat sám. Kolem roku 1837 ale přišel s mnohem odvážnějším nápadem: se strojem, který by uměl spočítat cokoli, co mu člověk zadá.</p><p>Analytický stroj se měl skládat ze dvou hlavních částí. <strong>Sklad</strong> (anglicky <em>store</em>) měl uchovávat až tisíc čísel o čtyřiceti desetinných místech, tedy paměť. <strong>Mlýn</strong> (<em>mill</em>) prováděl samotné výpočty, dnes bychom řekli procesor. Program se do stroje zadával pomocí děrných štítků, které Babbage převzal z Jacquardova tkalcovského stavu. Stroj uměl i podmíněné skoky a cykly, takže by byl z dnešního pohledu turingovsky úplný.</p><h3>Ada Lovelace</h3><p>Velkou část toho, co o stroji víme, sepsala Ada Lovelace, dcera lorda Byrona. V roce 1843 přeložila článek o analytickém stroji a připsala k němu poznámky, které byly delší než samotný překlad. Jedna z nich popisuje postup, jak na stroji spočítat Bernoulliho čísla. Proto se jí často říká první programátorka. Napsala také, že by stroj mohl pracovat nejen s čísly, ale třeba i s hudbou, což byla na tu dobu dost odvážná myšlenka.</p><p>Stroj se nikdy nedokončil. Chyběly peníze, britská vláda ztratila trpělivost a tehdejší mechanika nedokázala vyrobit tisíce součástek s potřebnou přesností. Babbage na projektu pracoval až do své smrti v roce 1871. Na fotografii je zkušební model části mlýna, který dnes stojí v londýnském Science Museum.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Analytick%C3%BD_stroj", "label": "Wikipedie: Analytický stroj" },
+              { "link": "https://en.wikipedia.org/wiki/Analytical_Engine", "label": "Wikipedia (EN): Analytical Engine" },
+              { "link": "https://en.wikipedia.org/wiki/Ada_Lovelace", "label": "Wikipedia (EN): Ada Lovelace" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Babbages_Analytical_Engine,_1834-1871._(9660574685).jpg", "label": "Fotografie: Science Museum London, Wikimedia Commons, CC BY-SA 2.0" }
+            ]
+          }
+        },
+        {
+          "name": "Zuse Z3",
+          "year": 1941,
+          "image": {
+            "src": "/categories/nulta/zuse-z3.webp",
+            "alt": "Replika počítače Zuse Z3 v Deutsches Museum v Mnichově, skříň s relé a ovládací pult"
+          },
+          "description": "Reléový počítač Konrada Zuseho z Berlína. První fungující programovatelný počítač na světě.",
+          "article": {
+            "heading": "Zuse Z3: počítač z berlínského obýváku",
+            "article": "<p>Konrad Zuse byl stavební inženýr a jako takový strávil spoustu času nudnými statickými výpočty. Usoudil, že by to za něj měl dělat stroj. První pokusy stavěl v bytě svých rodičů v Berlíně a 12. května 1941 předvedl model Z3, který dnes většina historiků považuje za první fungující programovatelný a plně automatický počítač.</p><p>Z3 obsahoval přibližně 2 600 telefonních relé. Na rozdíl od Babbageova stroje už počítal ve dvojkové soustavě a dokonce s čísly v plovoucí řádové čárce, tedy s desetinnými čísly v dnešním smyslu. Slovo mělo 22 bitů a paměť pojala 64 čísel. Sečíst dvě čísla mu trvalo necelou sekundu, násobení zhruba tři sekundy. Program se načítal z děrované filmové pásky (Zuse používal vyřazený kinofilm).</p><p>Válka mu moc nepřála. Německé úřady o stroj nejevily skoro žádný zájem a v roce 1943 byl originál zničen při spojeneckém bombardování Berlína. Zuse se k počítačům vrátil po válce a jeho firma Zuse KG vyráběla počítače až do 60. let.</p><p>Zajímavost na závěr: Z3 neměl podmíněný skok, takže se dlouho nevědělo, jestli je vůbec „opravdový“ počítač. Až v roce 1998 Raúl Rojas ukázal, že ho jde s trochou triků považovat za turingovsky úplný. Na fotografii je replika, kterou Zuse postavil v 60. letech a která je vystavena v mnichovském Deutsches Museum.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Z3", "label": "Wikipedie: Z3" },
+              { "link": "https://en.wikipedia.org/wiki/Z3_(computer)", "label": "Wikipedia (EN): Z3 (computer)" },
+              { "link": "https://en.wikipedia.org/wiki/Konrad_Zuse", "label": "Wikipedia (EN): Konrad Zuse" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Z3_Deutsches_Museum_b.jpg", "label": "Fotografie: Venusianer, Wikimedia Commons, CC BY-SA 3.0" }
+            ]
+          }
+        },
+        {
+          "name": "Harvard Mark I",
+          "year": 1944,
+          "image": {
+            "src": "/categories/nulta/harvard-mark-i.webp",
+            "alt": "Levá část počítače Harvard Mark I s nápisem Aiken–IBM Automatic Sequence Controlled Calculator"
+          },
+          "description": "Patnáct metrů dlouhý elektromechanický kolos, který IBM postavila pro Harvardovu univerzitu.",
+          "article": {
+            "heading": "Harvard Mark I: patnáct metrů relé a ozubených kol",
+            "article": "<p>Howard Aiken z Harvardovy univerzity přišel s myšlenkou velkého automatického kalkulátoru už koncem 30. let. Peníze a inženýry mu nakonec dala firma IBM a výsledek byl v roce 1944 slavnostně předán univerzitě. Oficiálně se jmenoval IBM Automatic Sequence Controlled Calculator, na Harvardu mu ale nikdo neřekl jinak než Mark I.</p><p>Rozměry byly úctyhodné. Stroj měřil asi 15,5 metru na délku, 2,4 metru na výšku a vážil kolem pěti tun. Uvnitř bylo přes 750 tisíc součástek a stovky kilometrů drátů. Všechny mechanické části poháněla jedna dlouhá hřídel s elektromotorem, takže při chodu stroj podle pamětníků zněl jako místnost plná pletacích jehlic.</p><h3>Jak rychle to bylo?</h3><ul><li>sčítání: asi tři operace za sekundu</li><li>násobení: zhruba šest sekund</li><li>dělení: přes patnáct sekund</li><li>logaritmus nebo sinus: přes minutu</li></ul><p>Dnes to zní k smíchu, ale Mark I pracoval bez přestávky a nedělal chyby z únavy. Program četl z děrované papírové pásky a během války na něm běžely výpočty pro americké námořnictvo a také pro projekt Manhattan, na kterých se podílel John von Neumann.</p><p>Jednou z prvních programátorek byla Grace Hopperová, pozdější admirálka a autorka prvních překladačů. S provozem Marku I se pojí i známá historka o „bugu“: v roce 1947 našli v relé jeho nástupce Marku II skutečnou můru a nalepili ji do provozního deníku. Mark I sloužil až do roku 1959.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Harvard_Mark_I", "label": "Wikipedie: Harvard Mark I" },
+              { "link": "https://en.wikipedia.org/wiki/Harvard_Mark_I", "label": "Wikipedia (EN): Harvard Mark I" },
+              { "link": "https://en.wikipedia.org/wiki/Grace_Hopper", "label": "Wikipedia (EN): Grace Hopper" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Harvard_Mark_I_Computer_-_Left_Segment.jpg", "label": "Fotografie: Daderot, Wikimedia Commons, CC BY-SA 3.0" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "generation": "prvni",
+      "name": "První generace",
+      "description": "<p>První generace počítačů vsadila na elektronky. Elektronka umí přepínat proud tisíckrát rychleji než relé, protože se v ní nic nehýbe. Háček je v tom, že se hřeje, žere spoustu energie a dřív nebo později praskne. Počítače s desítkami tisíc elektronek proto zabíraly celé sály a technici v nich neustále měnili vadné kusy.</p><p>Tato éra trvala zhruba od roku 1945 do konce 50. let. Programovalo se většinou přímo ve strojovém kódu a pamětí byly rtuťové zpožďovací linky, magnetické bubny nebo obrazovky. U nás do ní patří počítač EPOS Antonína Svobody, i když ten byl dokončen až v době, kdy ve světě nastupovaly tranzistory.</p>",
+      "computers": [
+        {
+          "name": "Colossus",
+          "year": 1944,
+          "image": {
+            "src": "/categories/prvni/colossus.webp",
+            "alt": "Rekonstrukce počítače Colossus v National Museum of Computing v Bletchley Parku"
+          },
+          "description": "Tajný britský počítač z Bletchley Parku, který luštil šifry německého vrchního velení.",
+          "article": {
+            "heading": "Colossus: elektronky proti Hitlerovým šifrám",
+            "article": "<p>O Enigmě slyšel skoro každý. Méně se ví, že nejvyšší německé velení používalo ještě složitější šifrovací stroj Lorenz SZ40/42, kterému Britové v Bletchley Parku přezdívali Tunny. Luštit ho ručně trvalo týdny, a to bylo na válečné zprávy příliš pomalé.</p><p>Řešení přinesl inženýr Tommy Flowers z výzkumné stanice britské pošty. Navrhl stroj s 1 600 elektronkami, což tehdy většina odborníků považovala za šílenství, protože elektronky prý byly nespolehlivé. Flowers ale věděl z telefonních ústředen, že pokud je člověk nevypíná, vydrží roky. Colossus Mark 1 začal pracovat v únoru 1944. Vylepšený Mark 2 s 2 400 elektronkami byl v provozu 1. června 1944, tedy pár dní před vyloďením v Normandii.</p><p>Colossus četl děrovanou pásku se zachycenou zprávou rychlostí 5 000 znaků za sekundu a hledal nastavení šifrovacích kol. Nebyl to univerzální počítač, programoval se přepínači a propojkami a uměl jen úlohy spojené s luštěním. I tak byl prvním programovatelným elektronickým digitálním počítačem.</p><p>Do konce války jich běželo deset. Pak přišel rozkaz většinu z nich rozebrat a o celé věci se nesmělo mluvit až do 70. let. Proto se v učebnicích dlouho psalo, že prvním elektronickým počítačem byl americký ENIAC. Funkční rekonstrukci postavil tým Tonyho Salea a dnes si ji můžete prohlédnout v muzeu v Bletchley Parku.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Colossus_(po%C4%8D%C3%ADta%C4%8D)", "label": "Wikipedie: Colossus (počítač)" },
+              { "link": "https://en.wikipedia.org/wiki/Colossus_computer", "label": "Wikipedia (EN): Colossus computer" },
+              { "link": "https://www.tnmoc.org/colossus", "label": "The National Museum of Computing: Colossus" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_the_reconstructed_Colossus_at_The_National_Museum_of_Computing,_Bletchley_Park.jpg", "label": "Fotografie: TedColes, Wikimedia Commons, CC BY-SA 4.0" }
+            ]
+          }
+        },
+        {
+          "name": "ENIAC",
+          "year": 1946,
+          "image": {
+            "src": "/categories/prvni/eniac.webp",
+            "alt": "Panely počítače ENIAC vystavené na Pensylvánské univerzitě s propojovacími kabely"
+          },
+          "description": "Třicet tun, 17 tisíc elektronek a první univerzální elektronický počítač, o kterém se smělo mluvit.",
+          "article": {
+            "heading": "ENIAC: obr, který zabral celý sál",
+            "article": "<p>Americká armáda potřebovala za války tabulky pro dělostřelce. Každá tabulka znamenala tisíce výpočtů drah střel a počítaly je ručně desítky lidí s mechanickými kalkulačkami. John Mauchly a J. Presper Eckert z Pensylvánské univerzity proto navrhli elektronický počítač, který by to zvládl za zlomek času. Stavět se začalo v roce 1943, hotovo bylo koncem roku 1945 a veřejnosti byl ENIAC představen v únoru 1946.</p><h3>Pár čísel</h3><ul><li>přibližně 17 500 elektronek a 1 500 relé</li><li>váha kolem 27 tun, plocha asi 167 m²</li><li>příkon 150 kW</li><li>5 000 sčítání za sekundu</li></ul><p>Ve své době to byla neskutečná rychlost. Výpočet, na kterém by člověk strávil celý den, měl ENIAC hotový za pár vteřin. Nejvíc starostí dělaly elektronky, které pořád odcházely. Technici nakonec zjistili, že se kazí hlavně při zapínání a vypínání, a tak stroj prostě nechávali běžet.</p><h3>Programátorky, na které se zapomnělo</h3><p>ENIAC neměl program uložený v paměti. Úloha se „programovala“ tak, že se přepojily kabely a nastavily stovky přepínačů, což mohlo trvat i několik dní. Tuhle práci dělalo šest žen: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas a Ruth Lichterman. Na dobových fotkách je často popisovali jako modelky, které jen pózují u stroje. Uznání se jim dostalo až o desítky let později.</p><p>ENIAC pracoval až do roku 1955 a počítalo se na něm třeba i pro vývoj vodíkové bomby. Části stroje dnes najdete v několika amerických muzeích, například přímo na Pensylvánské univerzitě.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/ENIAC", "label": "Wikipedie: ENIAC" },
+              { "link": "https://en.wikipedia.org/wiki/ENIAC", "label": "Wikipedia (EN): ENIAC" },
+              { "link": "https://en.wikipedia.org/wiki/ENIAC#Programmers", "label": "Wikipedia (EN): Programátorky ENIACu" },
+              { "link": "https://commons.wikimedia.org/wiki/File:ENIAC_Penn1.jpg", "label": "Fotografie: TexasDex, Wikimedia Commons, CC BY-SA 3.0" }
+            ]
+          }
+        },
+        {
+          "name": "UNIVAC I",
+          "year": 1951,
+          "image": {
+            "src": "/categories/prvni/univac-i.webp",
+            "alt": "Ovládací konzole počítače UNIVAC I s řadami přepínačů a kontrolek"
+          },
+          "description": "První americký počítač na prodej. Proslavil se tím, že v televizi předpověděl výsledek prezidentských voleb.",
+          "article": {
+            "heading": "UNIVAC I: počítač, kterému televize nevěřila",
+            "article": "<p>Po ENIACu se Eckert s Mauchlym rozhodli, že počítače nebudou stavět jen pro armádu, ale budou je prodávat. Založili vlastní firmu, která se brzy dostala do finančních potíží a koupila ji společnost Remington Rand. V březnu 1951 převzal první UNIVAC I americký Úřad pro sčítání lidu. Byl to první komerčně vyráběný počítač v USA (v Británii byl o pár týdnů dřív Ferranti Mark 1).</p><p>UNIVAC měl kolem 5 200 elektronek, vážil přes 13 tun a jako paměť používal rtuťové zpožďovací linky. Data se v nich ukládala jako zvukové pulzy, které se pořád dokola honily trubicí se rtutí. Vešlo se tam 1 000 slov. Novinkou byly magnetické pásky, takže už se nemuselo všechno vkládat na děrných štítcích.</p><h3>Volby 1952</h3><p>Slávu mu přinesla noc prezidentských voleb v roce 1952. Televize CBS si UNIVAC půjčila, aby z prvních sečtených hlasů odhadl výsledek. Průzkumy tehdy čekaly vyrovnaný souboj, ale počítač už podle malého vzorku hlasů předpověděl drtivé vítězství Eisenhowera. Redaktoři výsledku nevěřili, a tak ho v přímém přenosu raději nepustili. Když se později ukázalo, že UNIVAC měl pravdu, museli to na obrazovce přiznat. Od té doby se počítače při volbách používají běžně.</p><p>Vyrobilo se celkem 46 kusů. Kupovaly je úřady, pojišťovny i velké firmy jako General Electric, a slovo „UNIVAC“ se v Americe na nějaký čas stalo synonymem pro počítač vůbec.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/UNIVAC_I", "label": "Wikipedie: UNIVAC I" },
+              { "link": "https://en.wikipedia.org/wiki/UNIVAC_I", "label": "Wikipedia (EN): UNIVAC I" },
+              { "link": "https://www.census.gov/history/www/innovations/technology/univac_i.html", "label": "U.S. Census Bureau: UNIVAC I" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Univac_I_at_CHM.agr.jpg", "label": "Fotografie: ArnoldReinhold, Wikimedia Commons, CC BY-SA 3.0" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "generation": "druha",
+      "name": "Druhá generace",
+      "description": "<p>V roce 1947 sestrojili v Bellových laboratořích první tranzistor. Dělá v podstatě totéž co elektronka, ale je menší, nehřeje se tolik, spotřebuje zlomek energie a vydrží skoro věčně. Koncem 50. let se tranzistory dostaly do počítačů a ty se rázem zmenšily, zlevnily a hlavně přestaly pořád odcházet.</p><p>Druhá generace (zhruba 1956 až 1964) přinesla také feritovou paměť a první vyšší programovací jazyky, hlavně FORTRAN a COBOL. Programátor už nemusel psát jen jedničky a nuly, a počítače si tak začaly kupovat banky, pojišťovny a univerzity.</p>",
+      "computers": [
+        {
+          "name": "IBM 1401",
+          "year": 1959,
+          "image": {
+            "src": "/categories/druha/ibm-1401.webp",
+            "alt": "Sestava IBM 1401 s páskovými jednotkami, diskovou jednotkou, konzolí a tiskárnou"
+          },
+          "description": "Tranzistorový počítač pro firmy, kterého se prodalo přes deset tisíc kusů. Takový Ford T mezi počítači.",
+          "article": {
+            "heading": "IBM 1401: počítač pro účetní",
+            "article": "<p>Na konci 50. let měla většina velkých firem plné kanceláře děrnoštítkových strojů. Ty uměly třídit, sčítat a tisknout, ale byly pomalé a každá změna znamenala přestavět desku s propojkami. IBM v říjnu 1959 představila model 1401, který měl tyhle stroje nahradit. A povedlo se to líp, než kdokoli čekal.</p><p>1401 byl postavený na tranzistorech zasazených do malých destiček zvaných SMS karty. Pracoval s desítkovými čísly a znaky, ne s binárními slovy, protože jeho uživatelé počítali hlavně faktury, výplaty a skladové zásoby. Paměť měla podle verze 1 400 až 16 000 znaků. K počítači patřila tiskárna IBM 1403, která zvládla 600 řádků za minutu a byla tak hlasitá, že ji programátoři v 60. letech naučili „hrát“ hudbu.</p><p>Hlavní trik byl v ceně. Počítač se dal pronajmout zhruba za 2 500 dolarů měsíčně, což si mohla dovolit i středně velká firma. Za pár let jich bylo nainstalováno přes deset tisíc a v jednu chvíli tvořily asi polovinu všech počítačů na světě. Proto se mu přezdívá Ford T počítačového průmyslu.</p><p>IBM ho přestala nabízet až v roce 1971. Dva funkční kusy dodnes udržují dobrovolníci v Computer History Museum v Kalifornii a občas je předvádějí návštěvníkům, včetně oné hrající tiskárny.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/IBM_1401", "label": "Wikipedia (EN): IBM 1401" },
+              { "link": "https://www.ibm.com/history/1401", "label": "IBM: The IBM 1401" },
+              { "link": "https://computerhistory.org/exhibits/ibm1401/", "label": "Computer History Museum: IBM 1401 Demo Lab" },
+              { "link": "https://commons.wikimedia.org/wiki/File:IBM1401_729Tape_1405Disk_1407Console_COLOR.jpg", "label": "Fotografie: Lucaseverini66, Wikimedia Commons, CC BY-SA 4.0" }
+            ]
+          }
+        },
+        {
+          "name": "IBM 7090",
+          "year": 1959,
+          "image": {
+            "src": "/categories/druha/ibm-7090.webp",
+            "alt": "Skupina lidí stojí u počítače IBM 7090 v NASA Ames Research Center"
+          },
+          "description": "Tranzistorový sálový počítač, na kterém NASA počítala lety prvních amerických astronautů.",
+          "article": {
+            "heading": "IBM 7090: výpočty pro vesmírné lety",
+            "article": "<p>IBM 7090 je v podstatě starší model IBM 709 přestavěný z elektronek na tranzistory. Vypadá to jako drobná změna, ale výsledek byl zhruba šestkrát rychlejší a pronájem stál přibližně polovinu. První kusy byly v roce 1959 dodány americkému letectvu pro systém včasného varování před balistickými raketami.</p><p>Stroj pracoval s 36bitovými slovy, měl feritovou paměť na 32 768 slov a za sekundu zvládl přes dvě stě tisíc sčítání. Programovalo se na něm převážně ve FORTRANu, který IBM vyvinula o pár let dřív. Koupit se dal asi za tři miliony dolarů, takže si ho pořizovaly hlavně vládní instituce, velké univerzity a letecké firmy.</p><h3>Katherine Johnsonová a let Johna Glenna</h3><p>Nejznámější zákazník byla NASA. Na sedmi devadesátkách se počítaly dráhy pro program Mercury a později Gemini. Před letem Johna Glenna kolem Země v roce 1962 si astronaut údajně vyžádal, aby výsledky z počítače ručně zkontrolovala matematička Katherine Johnsonová. Když čísla potvrdila, byl ochoten letět. Tenhle příběh se dostal i do filmu Skrytá čísla, kde se 7090 objevuje taky.</p><p>Na 7090 běžel i SABRE, rezervační systém letenek pro American Airlines, který spustili začátkem 60. let. Byl to jeden z prvních velkých systémů, kde se s počítačem pracovalo v reálném čase přes terminály po celé zemi.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/IBM_7090", "label": "Wikipedia (EN): IBM 7090" },
+              { "link": "https://cs.wikipedia.org/wiki/Katherine_Johnsonov%C3%A1", "label": "Wikipedie: Katherine Johnsonová" },
+              { "link": "https://en.wikipedia.org/wiki/Sabre_(travel_reservation_system)", "label": "Wikipedia (EN): Sabre" },
+              { "link": "https://commons.wikimedia.org/wiki/File:IBM_7090_computer.jpg", "label": "Fotografie: NASA Ames Research Center, volné dílo" }
+            ]
+          }
+        },
+        {
+          "name": "DEC PDP-1",
+          "year": 1959,
+          "image": {
+            "src": "/categories/druha/pdp-1.webp",
+            "alt": "Počítač DEC PDP-1 s kulatou obrazovkou a dálnopisem v Computer History Museum"
+          },
+          "description": "Malý a relativně levný počítač od DEC. Studenti z MIT na něm napsali jednu z prvních videoher.",
+          "article": {
+            "heading": "PDP-1: počítač, na kterém se dalo hrát",
+            "article": "<p>Firma Digital Equipment Corporation vznikla v roce 1957 a její zakladatelé měli úplně jiný pohled na počítače než IBM. Místo obrovských sálových strojů, ke kterým se člověk dostal jen přes operátora, chtěli prodávat menší počítač, se kterým by mohl pracovat přímo jeden člověk. Výsledkem byl PDP-1, který se začal vyrábět v roce 1959.</p><p>PDP-1 stál asi 120 tisíc dolarů. Na dnešní poměry pořád hodně, ale proti milionům za stroje od IBM to byla výhodná koupě. Měl 18bitová slova, feritovou paměť na 4 096 slov a zvládl kolem sto tisíc sčítání za sekundu. Hlavně ale měl kulatou vektorovou obrazovku a světelné pero. Celkem se vyrobilo 53 kusů.</p><h3>Spacewar!</h3><p>Jeden PDP-1 dostala v roce 1961 univerzita MIT a tamní studenti z něj byli nadšení. Steve Russell s několika kamarády na něm v roce 1962 naprogramovali hru Spacewar!, ve které proti sobě bojují dvě vesmírné lodě kolem hvězdy s gravitací. Hra se rychle rozšířila všude, kde PDP-1 stál, a dnes se považuje za jednu z prvních skutečných videoher. Mimochodem, DEC ji pak používal jako testovací program u nově dodaných strojů.</p><p>Na PDP-1 vznikly i první textové editory, programy na hraní hudby a ladicí nástroje. Kolem počítače se na MIT vytvořila komunita, které se začalo říkat hackeři, tehdy ještě v tom dobrém smyslu slova. Computer History Museum má funkční PDP-1 a Spacewar! na něm občas pouští.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/PDP-1", "label": "Wikipedia (EN): PDP-1" },
+              { "link": "https://cs.wikipedia.org/wiki/Spacewar!", "label": "Wikipedie: Spacewar!" },
+              { "link": "https://computerhistory.org/pdp-1/", "label": "Computer History Museum: PDP-1 Restoration Project" },
+              { "link": "https://commons.wikimedia.org/wiki/File:PDP-1.jpg", "label": "Fotografie: Matthew Hutchinson, Wikimedia Commons, CC BY 2.0" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "generation": "treti",
+      "name": "Třetí generace",
+      "description": "<p>Jack Kilby z Texas Instruments a Robert Noyce z Fairchildu nezávisle na sobě přišli v letech 1958 a 1959 na to, jak dát několik tranzistorů a dalších součástek na jeden kousek křemíku. Tak vznikl integrovaný obvod. V 60. letech se tyto čipy dostaly do počítačů a ty se znovu zmenšily a zrychlily.</p><p>Třetí generace (zhruba 1964 až 1971) je hlavně o tom, jak se s počítači pracuje. Objevily se operační systémy, sdílení času, kdy na jednom stroji pracuje víc lidí najednou přes terminály, a celé rodiny vzájemně kompatibilních počítačů. Vedle sálových strojů se začaly prodávat i minipočítače, které se vešly do laboratoře.</p>",
+      "computers": [
+        {
+          "name": "IBM System/360",
+          "year": 1964,
+          "image": {
+            "src": "/categories/treti/ibm-system-360.webp",
+            "alt": "Sestava IBM System/360 Model 20 s červenými skříněmi, řídicím panelem, tiskárnou a děrovačem štítků v Living Computer Museum v Seattlu"
+          },
+          "description": "Celá rodina počítačů, na kterých běžel stejný software. IBM na ni vsadila celou firmu.",
+          "article": {
+            "heading": "System/360: sázka za pět miliard",
+            "article": "<p>Začátkem 60. let měla IBM problém, který si sama vyrobila. Prodávala několik řad počítačů a každá měla vlastní instrukce a vlastní software. Když zákazník potřeboval větší stroj, musel všechny programy napsat znovu. Vedení firmy se proto rozhodlo pro radikální krok: místo dalších modelů navrhnout jednu architekturu pro všechno, od malých počítačů po ty největší.</p><p>7. dubna 1964 IBM představila System/360. Šlo o rodinu modelů s rozdílným výkonem i cenou, ale na všech běžely stejné programy. Firma do vývoje dala kolem pěti miliard dolarů, víc než měla tehdy ročních tržeb. Kdyby to nevyšlo, IBM by to pravděpodobně nepřežila.</p><p>Vyšlo to. Objednávky přicházely po tisících a System/360 na dlouho určil, jak budou vypadat počítače. Zavedl například bajt o osmi bitech, který dnes považujeme za samozřejmost. Systém 360 řídil i lety Apolla v řídicím středisku v Houstonu.</p><h3>Integrované obvody? Napůl</h3><p>Abychom byli fér: S/360 ještě nepoužíval čistě integrované obvody, jak je známe dnes. IBM vyvinula vlastní technologii SLT, kde byly drobné tranzistory a odpory nalepené na keramické destičce. Byl to mezikrok mezi tranzistory a skutečnými čipy, ale do třetí generace se S/360 řadí hlavně kvůli tomu, co změnil v architektuře a v softwaru.</p><p>Vedoucí projektu Fred Brooks později podle zkušeností s vývojem operačního systému OS/360 napsal knihu Mýtický člověkoměsíc. Nejznámější věta z ní zní, že přidat lidi do zpožděného projektu ho ještě víc zpozdí. A sálové počítače IBM Z, které dnes běží v bankách, umí pořád spustit programy psané pro System/360.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/IBM_System/360", "label": "Wikipedie: IBM System/360" },
+              { "link": "https://en.wikipedia.org/wiki/IBM_System/360", "label": "Wikipedia (EN): IBM System/360" },
+              { "link": "https://www.ibm.com/history/system-360", "label": "IBM: The IBM System/360" },
+              { "link": "https://commons.wikimedia.org/wiki/File:LCM_-_IBM_System_360_-_01.jpg", "label": "Fotografie: Joe Mabel, Wikimedia Commons, CC BY-SA 3.0" }
+            ]
+          }
+        },
+        {
+          "name": "DEC PDP-8",
+          "year": 1965,
+          "image": {
+            "src": "/categories/treti/pdp-8.webp",
+            "alt": "Minipočítač DEC PDP-8 s kouřově skleněnou skříní a předním panelem s rozsvícenými kontrolkami a přepínači"
+          },
+          "description": "První úspěšný minipočítač. Vešel se na stůl a stál zlomek ceny sálových strojů.",
+          "article": {
+            "heading": "PDP-8: počítač, který se vešel do laboratoře",
+            "article": "<p>V březnu 1965 uvedla firma DEC na trh PDP-8 za 18 500 dolarů. To bylo tak málo, že si ho mohla koupit i jedna laboratoř nebo menší továrna, a ne jen celá univerzita. Dá se říct, že právě tímto strojem začala éra minipočítačů. Samotné slovo „minipočítač“ se mimochodem začalo používat taky kolem PDP-8, údajně podle tehdy módních minisukní.</p><p>PDP-8 byl záměrně jednoduchý. Měl 12bitová slova, základní paměť na 4 096 slov a jen osm základních instrukcí. Programátoři se museli naučit spoustu triků, aby z tak malé instrukční sady dostali všechno potřebné, a mnozí na to vzpomínají s láskou. Vešel se do skříně velikosti menší lednice, a pozdější modely dokonce na stůl.</p><p>Původní PDP-8 z roku 1965 byl ještě postavený z jednotlivých tranzistorů. Integrované obvody přinesl až model PDP-8/I z roku 1968 a po něm další verze, které byly menší a levnější. Celkem se různých variant prodalo přes 50 tisíc kusů, na tu dobu obrovské číslo.</p><p>PDP-8 řídil výrobní linky, měřicí přístroje v laboratořích, nemocniční systémy i sazbu novin. Pro mnoho inženýrů to byl první počítač, na kterém mohli pracovat úplně sami, bez fronty a bez operátora. Ten pocit pak o pár let později naplno přenesly do domácností osobní počítače.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/PDP-8", "label": "Wikipedia (EN): PDP-8" },
+              { "link": "https://cs.wikipedia.org/wiki/Minipo%C4%8D%C3%ADta%C4%8D", "label": "Wikipedie: Minipočítač" },
+              { "link": "https://www.computerhistory.org/revolution/minicomputers/11/331", "label": "Computer History Museum: The PDP-8" },
+              { "link": "https://commons.wikimedia.org/wiki/File:DEC_PDP-8,_Stuttgart.jpg", "label": "Fotografie: Wolfgang Stief, Wikimedia Commons, CC BY 2.0" }
+            ]
+          }
+        },
+        {
+          "name": "Apollo Guidance Computer",
+          "year": 1966,
+          "image": {
+            "src": "/categories/treti/apollo-guidance-computer.webp",
+            "alt": "Pozlacená skříň počítače Apollo Guidance Computer a vedle ní ovládací jednotka DSKY s klávesnicí a displejem"
+          },
+          "description": "Palubní počítač misí Apollo. Jeden z prvních počítačů postavených z integrovaných obvodů.",
+          "article": {
+            "heading": "Apollo Guidance Computer: počítač, který přistál na Měsíci",
+            "article": "<p>Když NASA na začátku 60. let plánovala lety na Měsíc, potřebovala do lodi počítač, který by sám navigoval. Musel být malý, lehký a nesměl se pokazit. Úkol dostala Instrumentation Laboratory na MIT a vyráběla ho firma Raytheon. Inženýři tehdy riskovali a sáhli po úplně nové technologii, integrovaných obvodech. Apollo program jich v jednu chvíli skupoval většinu všech, které se v USA vyrobily, a tím výrobu čipů pořádně rozjel.</p><p>Verze, která letěla na Měsíc, obsahovala asi 2 800 čipů a v každém byly dvě jednoduchá logická hradla NOR. Celý počítač vážil kolem 32 kilogramů a pracoval s taktem 2 MHz. Měl 2 048 slov přepisovatelné paměti a 36 864 slov pevné paměti. Ta se vyráběla jako takzvaná lanová paměť: dělnice v továrně ručně provlékaly dráty skrz feritová jádra nebo kolem nich, a tím do ní „vplétaly“ program. Jakákoli oprava softwaru tak znamenala upéct nový kus paměti.</p><h3>Alarm 1202</h3><p>Astronauti s počítačem komunikovali přes klávesnici DSKY, kde se zadávaly číselné kódy „sloveso“ a „podstatné jméno“. Při přistání Apolla 11 v červenci 1969 začal počítač hlásit alarmy 1202 a 1201, protože byl zahlcený daty z radaru. Software, který napsal tým Margaret Hamiltonové, byl ale navržený tak, aby méně důležité úlohy zahodil a staral se dál o ty nejdůležitější. Řídicí středisko dalo pokyn pokračovat a Eagle přistál.</p><p>Celkově se AGC během programu Apollo ani jednou vážně nepokazil. Na stroj s kapacitou paměti menší, než má dnešní obyčejná nabíječka, docela dobrý výsledek.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer", "label": "Wikipedia (EN): Apollo Guidance Computer" },
+              { "link": "https://cs.wikipedia.org/wiki/Margaret_Hamilton", "label": "Wikipedie: Margaret Hamilton" },
+              { "link": "https://en.wikipedia.org/wiki/Core_rope_memory", "label": "Wikipedia (EN): Core rope memory" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Agc_view.jpg", "label": "Fotografie: NASA, Wikimedia Commons, volné dílo" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "generation": "ctvrta",
+      "name": "Čtvrtá generace",
+      "description": "<p>V roce 1971 Intel představil čip 4004, na kterém byl celý procesor. Říká se mu mikroprocesor a s ním začíná čtvrtá generace počítačů, ve které vlastně žijeme dodnes. Najednou šlo postavit počítač za cenu lepší televize a dát ho domů nebo do kanceláře na stůl.</p><p>V 70. letech se objevily první stavebnice pro nadšence, v 80. letech osobní počítače pro každého a později notebooky, internet a telefony. Princip ale zůstal stejný: mikroprocesor, na kterém jsou dnes místo dvou tisíc tranzistorů desítky miliard.</p>",
+      "computers": [
+        {
+          "name": "Altair 8800",
+          "year": 1975,
+          "image": {
+            "src": "/categories/ctvrta/altair-8800.webp",
+            "alt": "Počítač Altair 8800 v modré skříni s řadou přepínačů a kontrolek na předním panelu"
+          },
+          "description": "Stavebnice s procesorem Intel 8080, která spustila éru domácích počítačů a dala vzniknout Microsoftu.",
+          "article": {
+            "heading": "Altair 8800: počítač ze stavebnice",
+            "article": "<p>V lednu 1975 vyšel časopis Popular Electronics s modrou krabicí na titulní straně a nadpisem o prvním minipočítači, který konkuruje komerčním modelům. Šlo o Altair 8800 od malé firmy MITS z Albuquerque, kterou vedl Ed Roberts. Stavebnice stála 439 dolarů, sestavený kus o něco víc. Roberts doufal, že prodá pár stovek kusů. Během pár měsíců jich měl objednaných tisíce.</p><p>Uvnitř byl procesor Intel 8080 s taktem 2 MHz a v základu jen 256 bajtů paměti. Žádná klávesnice ani monitor. Program se zadával přepínači na předním panelu, bit po bitu, a výsledek se dal přečíst z blikajících diod. Pro běžného člověka k ničemu, pro nadšence do elektroniky splněný sen.</p><h3>Začátek Microsoftu</h3><p>Dva mladí programátoři, Bill Gates a Paul Allen, si časopis přečetli a zavolali do MITS, že pro Altair mají jazyk BASIC. Ve skutečnosti ho ještě neměli. Za pár týdnů ho napsali, a to na simulátoru, protože skutečný Altair neviděli. Allen letěl do Albuquerque program předvést a napoprvé fungoval. Na jaře 1975 pak založili firmu Micro-Soft.</p><p>Altair měl i další vliv. Kolem něj vznikl kalifornský Homebrew Computer Club, kam chodili mimo jiné Steve Wozniak a Steve Jobs. Sběrnice Altairu, později známá jako S-100, se na několik let stala standardem pro další výrobce.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Altair_8800", "label": "Wikipedie: Altair 8800" },
+              { "link": "https://en.wikipedia.org/wiki/Altair_8800", "label": "Wikipedia (EN): Altair 8800" },
+              { "link": "https://en.wikipedia.org/wiki/Altair_BASIC", "label": "Wikipedia (EN): Altair BASIC" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Altair_8800_Computer.jpg", "label": "Fotografie: Michael Holley, volné dílo" }
+            ]
+          }
+        },
+        {
+          "name": "Apple II",
+          "year": 1977,
+          "image": {
+            "src": "/categories/ctvrta/apple-ii.webp",
+            "alt": "Počítač Apple II s monitorem a dvěma disketovými mechanikami Disk II"
+          },
+          "description": "Hotový počítač s barevnou grafikou, který se dal koupit, zapojit a rovnou používat.",
+          "article": {
+            "heading": "Apple II: počítač, který nebyl jen pro bastlíře",
+            "article": "<p>První Apple byla holá deska, ke které si zákazník musel sehnat skříň, klávesnici i zdroj. Steve Wozniak ale už pracoval na nástupci a Steve Jobs měl jasno, jak má vypadat: hotový výrobek v plastové skříni, který se vybalí, zapojí do televize a funguje. Apple II byl představen v dubnu 1977 na veletrhu West Coast Computer Faire a v červnu se začal prodávat.</p><p>Uvnitř byl procesor MOS 6502 s taktem 1 MHz a v základu 4 KB paměti, rozšiřitelné až na 48 KB. Hlavním lákadlem byla barevná grafika, což tehdy u domácích počítačů nebylo běžné, a osm rozšiřujících slotů, do kterých si každý mohl přidat, co potřeboval. Základní verze stála 1 298 dolarů. V roce 1978 přibyla disketová mechanika Disk II, takže se programy nemusely nahrávat z kazet.</p><h3>VisiCalc</h3><p>Skutečný průlom ale přišel v roce 1979 s programem VisiCalc, první tabulkovým procesorem. Účetní a manažeři najednou viděli, že když změní jedno číslo, přepočítá se celá tabulka. Spousta lidí si kvůli němu koupila celý Apple II. Tím se ukázalo, že osobní počítač nemusí být jen hračka pro nadšence, ale nástroj do práce.</p><p>Řada Apple II se v různých verzích vyráběla až do roku 1993 a prodalo se jí několik milionů kusů. Pokud si ji chcete prohlédnout naživo, nemusíte daleko, v Apple Museum v Praze jich mají hned několik.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/Apple_II", "label": "Wikipedie: Apple II" },
+              { "link": "https://en.wikipedia.org/wiki/Apple_II", "label": "Wikipedia (EN): Apple II" },
+              { "link": "https://en.wikipedia.org/wiki/VisiCalc", "label": "Wikipedia (EN): VisiCalc" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Apple_II-IMG_7064.jpg", "label": "Fotografie: Rama & Musée Bolo, Wikimedia Commons, CC BY-SA 2.0 FR" }
+            ]
+          }
+        },
+        {
+          "name": "IBM PC",
+          "year": 1981,
+          "image": {
+            "src": "/categories/ctvrta/ibm-pc.webp",
+            "alt": "Osobní počítač IBM PC 5150 s monitorem a klávesnicí"
+          },
+          "description": "Počítač, ze kterého vzešel standard PC. Většina dnešních stolních počítačů je jeho vzdáleným potomkem.",
+          "article": {
+            "heading": "IBM PC: počítač, který se stal standardem",
+            "article": "<p>Koncem 70. let IBM sledovala, jak malé firmy jako Apple prodávají osobní počítače, a pochopila, že jí ujíždí vlak. Vlastní vývoj by ale u tak velké firmy trval roky. Malý tým v Boca Raton na Floridě pod vedením Dona Estridge proto dostal výjimku: smí použít součástky od jiných výrobců a má na všechno zhruba rok.</p><p>IBM Personal Computer, model 5150, vyšel 12. srpna 1981. Měl procesor Intel 8088 s taktem 4,77 MHz, v základu 16 KB paměti a stál od 1 565 dolarů. Operační systém PC DOS dodal Microsoft, který ho ale sám jen koupil od malé firmy Seattle Computer Products. A podepsal smlouvu, která mu dovolila prodávat stejný systém i dalším výrobcům pod názvem MS-DOS. Ukázalo se, že to byl jeden z nejvýnosnějších obchodů v historii.</p><h3>Klony</h3><p>Protože byl IBM PC postavený z běžně dostupných dílů, jediné, co nešlo jen tak okopírovat, byl BIOS, malý program uložený v čipu. Firma Compaq ho v roce 1982 až 1983 legálně přepsala tak, že jedna skupina inženýrů popsala, co BIOS dělá, a druhá ho podle popisu napsala znovu, aniž by originál kdy viděla. Pak už nic nebránilo levným kopiím a na trh se vyvalily „IBM kompatibilní“ počítače.</p><p>IBM tak paradoxně vytvořila standard, který jí brzy přestal patřit. Časopis Time místo osobnosti roku 1982 vyhlásil „stroj roku“, osobní počítač. A procesory x86, na kterých běží většina dnešních stolních počítačů a notebooků, pořád nesou dědictví právě z tohohle modelu.</p>",
+            "sources": [
+              { "link": "https://cs.wikipedia.org/wiki/IBM_Personal_Computer", "label": "Wikipedie: IBM Personal Computer" },
+              { "link": "https://en.wikipedia.org/wiki/IBM_Personal_Computer", "label": "Wikipedia (EN): IBM Personal Computer" },
+              { "link": "https://www.ibm.com/history/personal-computer", "label": "IBM: The IBM PC" },
+              { "link": "https://commons.wikimedia.org/wiki/File:IBM_PC-IMG_7271_(transparent).png", "label": "Fotografie: Rama & Musée Bolo, Wikimedia Commons, CC BY-SA 2.0 FR" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "generation": "budoucnost",
+      "name": "Budoucnost",
+      "description": "<p>Tranzistory na čipech už jsou tak malé, že se počítají v jednotkách nanometrů, a dál je zmenšovat je čím dál těžší. Proto se hledají jiné cesty. Jedna vede k obrovským superpočítačům s desítkami tisíc grafických procesorů, které dnes slouží hlavně vědě a umělé inteligenci. Druhá je úplně jiná: kvantové počítače, které nepočítají s jedničkami a nulami, ale s kvantovými stavy.</p><p>Nikdo zatím přesně neví, jak budou počítače za dvacet let vypadat. Stroje v této kategorii ale ukazují, kterým směrem se vývoj ubírá.</p>",
+      "computers": [
+        {
+          "name": "IBM Quantum System One",
+          "year": 2019,
+          "image": {
+            "src": "/categories/budoucnost/ibm-quantum-system-one.webp",
+            "alt": "Kvantový počítač IBM Quantum System One s válcovým chladicím systémem"
+          },
+          "description": "První kvantový počítač, který se dal objednat jako hotový produkt. Uvnitř je chladněji než ve vesmíru.",
+          "article": {
+            "heading": "IBM Quantum System One: kvantový počítač ve skleněné kostce",
+            "article": "<p>Kvantové počítače existovaly v laboratořích už dřív, ale vypadaly jako změť kabelů a trubek, ke které musel neustále někdo chodit. IBM na veletrhu CES v lednu 2019 ukázala něco jiného: kompletní systém, zavřený ve vzduchotěsné skleněné kostce o hraně necelé tři metry. Na první pohled spíš umělecké dílo než počítač.</p><p>Uvnitř byl procesor s 20 kvantovými bity, takzvanými qubity. Klasický bit je vždycky buď 0, nebo 1. Qubit může být v superpozici, tedy v jakési kombinaci obou stavů najednou, a qubity se navzájem dají provázat. Pro některé typy úloh, třeba simulace molekul nebo určité optimalizační problémy, to znamená obrovské zrychlení.</p><h3>Proč tak zima?</h3><p>Qubity v počítačích IBM jsou supravodivé obvody a ty fungují jen při teplotě kolem 15 milikelvinů, tedy jen kousek nad absolutní nulou. Proto ta velká válcová věc uprostřed: je to ředicí chladnička, která procesor postupně chladí v několika stupních. Qubity jsou navíc neuvěřitelně citlivé na teplo, vibrace i elektromagnetické rušení. Skleněná kostka je tam právě proto, aby je chránila.</p><p>Systém One se nekupuje jako notebook. IBM ho instaluje do výzkumných center a přistupuje se k němu přes cloud. Jeden stojí například u Fraunhoferovy společnosti v německém Ehningenu, odkud je i fotografie. V roce 2023 IBM představila nástupce Quantum System Two. Užitečné kvantové výpočty, které by porazily klasické počítače v praktických úlohách, jsou ale pořád spíš otázkou příštích let.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/IBM_Quantum_System_One", "label": "Wikipedia (EN): IBM Quantum System One" },
+              { "link": "https://cs.wikipedia.org/wiki/Kvantov%C3%BD_po%C4%8D%C3%ADta%C4%8D", "label": "Wikipedie: Kvantový počítač" },
+              { "link": "https://www.ibm.com/quantum", "label": "IBM Quantum" },
+              { "link": "https://commons.wikimedia.org/wiki/File:IBM_Q_system_(Fraunhofer_2).jpg", "label": "Fotografie: IBM Research, Wikimedia Commons, CC BY 2.0" }
+            ]
+          }
+        },
+        {
+          "name": "Google Sycamore",
+          "year": 2019,
+          "image": {
+            "src": "/categories/budoucnost/sycamore.webp",
+            "alt": "Kvantový procesor Google Sycamore v kovovém pouzdře s nápisy Google a Sycamore"
+          },
+          "description": "Kvantový procesor, na kterém Google v roce 2019 předvedl takzvanou kvantovou nadřazenost.",
+          "article": {
+            "heading": "Sycamore: 200 sekund proti deseti tisícům let",
+            "article": "<p>V říjnu 2019 vyšel v časopise Nature článek týmu Google AI Quantum s odvážným názvem o kvantové nadřazenosti. Tým v něm tvrdil, že jejich procesor Sycamore vyřešil za zhruba 200 sekund úlohu, se kterou by nejvýkonnější superpočítač té doby, Summit, strávil kolem deseti tisíc let.</p><p>Sycamore měl 54 supravodivých qubitů, z nichž 53 fungovalo (jeden byl vadný). Úloha spočívala ve vzorkování výstupů z náhodně sestaveného kvantového obvodu. Prakticky k ničemu užitečná není, byla vybraná právě proto, že je pro klasický počítač mimořádně těžká. Šlo o to dokázat, že kvantový počítač umí v něčem porazit klasický, a ne vyřešit konkrétní problém.</p><h3>Spor s IBM</h3><p>Ne všichni byli přesvědčení. IBM pár dní po zveřejnění namítla, že kdyby se Summit naprogramoval chytřeji a využil i diskové úložiště, zvládl by stejnou úlohu zhruba za dva a půl dne. Během dalších let se skutečně objevily klasické algoritmy, které Googlův náskok výrazně zmenšily. I tak je Sycamore milníkem. Poprvé se ukázalo, že programovatelný kvantový procesor dokáže v praxi dělat něco, na co klasické stroje těžko stačí.</p><p>Google ve vývoji pokračuje. V prosinci 2024 představil čip Willow se 105 qubity, u kterého se poprvé podařilo, že s rostoucím počtem qubitů chyby ubývají, a ne přibývají. A to je přesně to, co kvantové počítače potřebují, aby jednou byly opravdu užitečné.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/Sycamore_processor", "label": "Wikipedia (EN): Sycamore processor" },
+              { "link": "https://www.nature.com/articles/s41586-019-1666-5", "label": "Nature: Quantum supremacy using a programmable superconducting processor" },
+              { "link": "https://en.wikipedia.org/wiki/Quantum_supremacy", "label": "Wikipedia (EN): Quantum supremacy" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Sycamore_Quantum_Chip.jpg", "label": "Fotografie: Coldupnorth, Wikimedia Commons, CC BY-SA 4.0" }
+            ]
+          }
+        },
+        {
+          "name": "Frontier",
+          "year": 2022,
+          "image": {
+            "src": "/categories/budoucnost/frontier.webp",
+            "alt": "Skříně superpočítače Frontier v Oak Ridge National Laboratory s logem Frontier"
+          },
+          "description": "První superpočítač, který oficiálně překonal hranici jednoho exaFLOPSu, tedy trilionu výpočtů za sekundu.",
+          "article": {
+            "heading": "Frontier: první exaflopový superpočítač",
+            "article": "<p>Superpočítače se už desítky let porovnávají v žebříčku TOP500 a jedna hranice se v něm dlouho zdála nedosažitelná: exaFLOPS, tedy 10<sup>18</sup> operací s desetinnými čísly za sekundu. Jinak řečeno trilion výpočtů každou sekundu. V květnu 2022 ji jako první oficiálně překonal Frontier z Oak Ridge National Laboratory v americkém Tennessee s výsledkem 1,1 exaFLOPSu.</p><p>Frontier postavila firma HPE na platformě Cray EX a srdcem jsou procesory a grafické akcelerátory od AMD. Na více než devíti tisících uzlech běží přes 37 tisíc grafických čipů AMD Instinct. Celé to zabírá 74 skříní a spotřebuje přes 20 megawattů, zhruba tolik jako menší město. Chladí se vodou, protože vzduchem by tolik tepla odvést nešlo. Stál přibližně 600 milionů dolarů.</p><h3>K čemu to je?</h3><p>Na Frontieru se nehrají hry ani se na něm nesurfuje. Vědci na něm počítají simulace, které by jinde trvaly měsíce: vývoj klimatu, chování jaderných reaktorů, nové materiály, léky, nebo jak se šíří rázové vlny ve hvězdách. Čím dál víc se na podobných strojích trénují i velké modely umělé inteligence.</p><p>Na prvním místě TOP500 vydržel Frontier až do listopadu 2024, kdy ho předběhl El Capitan z Livermore. Tak to u superpočítačů chodí. Frontier ale zůstane prvním, kdo hranici exaFLOPSu prolomil, a ukazuje, kam se výkon klasických počítačů posouvá dál, i když se tranzistory už skoro nedají zmenšovat.</p>",
+            "sources": [
+              { "link": "https://en.wikipedia.org/wiki/Frontier_(supercomputer)", "label": "Wikipedia (EN): Frontier (supercomputer)" },
+              { "link": "https://www.olcf.ornl.gov/frontier/", "label": "Oak Ridge Leadership Computing Facility: Frontier" },
+              { "link": "https://www.top500.org/system/180047/", "label": "TOP500: Frontier" },
+              { "link": "https://commons.wikimedia.org/wiki/File:Frontier_Supercomputer_(2).jpg", "label": "Fotografie: OLCF at ORNL, Wikimedia Commons, CC BY 2.0" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
