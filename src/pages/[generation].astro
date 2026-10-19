@@ -35,7 +35,12 @@ const { category } = Astro.props as { category: Category };
           // karty zmeni poradi, kdyz jsou liche
           const shouldFlip: boolean = index % 2 == 1;
 
-          return <ComputerItem computer={item} shouldFlip={shouldFlip} />;
+          return <ComputerItem
+              client:visible
+              computer={item}
+              shouldFlip={shouldFlip}
+              generation={category.generation}
+            />;
         })
       }
     </section>

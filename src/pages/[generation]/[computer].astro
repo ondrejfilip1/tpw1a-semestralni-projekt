@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import projectData from "../../data/data.json";
+import {
+  slugify,
+  type Category,
+  type Computer,
+  type JSONData,
+} from "../../data/data";
+import { ChevronLeft } from "lucide-react";
+
+export function getStaticPaths() {
+  const { categories } = projectData as JSONData;
+  return categories.flatMap((category) =>
+    category.computers.map((computer) => ({
+      params: {
+        generation: category.generation,
+        computer: slugify(computer.name),
+      },
+      props: { category, computer },
+    })),
+  );
+}
+
+const { category, computer } = Astro.props as {
+  category: Category;
+  computer: Computer;
+};
+---
+
+<Layout title={computer.name}>
+  <main class="md:px-12 px-4 container flex flex-col gap-8 mb-24">
+    <div class="flex lg:flex-row flex-col gap-8 min-h-[80vh] items-center lg:justify-start justify-center">
+      <div class="lg:w-1/2">
+            <a
+      href={`/${category.generation}`}
+      class="flex items-center text-primary sm:text-xl text-base mb-8"
+      ><ChevronLeft />Zpět do generace</a
+    >
+        <p class="text-tertiary sm:text-xl text-base">{computer.year}</p>
+        <h2 class="font-display">{computer.article.heading}</h2>
+      </div>
+      <img
+        src={computer.image.src}
+        alt={computer.image.alt}
+        style={{ viewTransitionName: `computer-${slugify(computer.name)}` }}
+        class="lg:max-h-124 max-h-84 w-full lg:w-1/2 object-contain"
+      />
+    </div>
+    <div
+      class="sm:text-xl text-base text-justify text-primary flex flex-col gap-4 [&_h3]:text-3xl [&_h3]:text-tertiary [&_h3]:mt-4"
+      set:html={computer.article.article}
+    />
+    {
+      computer.article.sources.length > 0 && (
+        <section class="flex flex-col gap-2">
+          <h3 class="text-3xl text-tertiary">Zdroje</h3>
+          <ul class="list-disc pl-6 sm:text-xl text-base">
+            {computer.article.sources.map((source) => (
+              <li>
+                <a
+                  href={source.link}
+                  target="_blank"
+                  rel="noopener"
+                  class="underline"
+                >
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </main>
+</Layout>

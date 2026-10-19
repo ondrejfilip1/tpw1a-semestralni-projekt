@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "vitest run"
+    "test": "vitest run",
+    "deploy": "astro build && touch dist/.nojekyll && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.1",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
+    "gh-pages": "^6.1.1",
     "jsdom": "^30.1.2",
     "vitest": "^5.0.3"
   }

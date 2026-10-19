@@ -2,26 +2,36 @@
 @config "../../tailwind.config.mjs";
 
 @font-face {
-    font-family: "Array";
-    src: url("/fonts/Array-Regular.woff2") format('woff2');
-    font-display: swap;
+  font-family: "Array";
+  src: url("/fonts/Array-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Khand";
-    src: url("/fonts/Khand-Regular.woff2") format('woff2');
-    font-display: swap;
+  font-family: "Khand";
+  src: url("/fonts/Khand-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+*::selection {
+    @apply bg-secondary;
 }
 
 body {
-    font-family: "Khand";
-    @apply bg-primary text-primary container mx-auto;
+  font-family: "Khand";
+  @apply bg-primary text-primary container mx-auto;
 }
 
 h1 {
-    @apply text-hero leading-tight tracking-tight text-tertiary font-display text-shadow-primary/10 text-shadow-[-6px_6px_0px]
+  @apply text-hero leading-tight tracking-tight text-tertiary font-display text-shadow-primary/10 text-shadow-[-6px_6px_0px];
 }
 
 h2 {
-    @apply md:text-6xl text-4xl leading-tight tracking-tight text-tertiary
+  @apply md:text-6xl text-4xl leading-tight tracking-tight text-tertiary;
 }
