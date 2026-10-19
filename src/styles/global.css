@@ -3,13 +3,13 @@
 
 @font-face {
   font-family: "Array";
-  src: url("/fonts/Array-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/Array-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Khand";
-  src: url("/fonts/Khand-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/Khand-Regular.woff2") format("woff2");
   font-display: swap;
 }
 

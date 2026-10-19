@@ -1,12 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import projectData from "../../data/data.json";
-import {
-  slugify,
-  type Category,
-  type Computer,
-  type JSONData,
-} from "../../data/data";
+import { BASE_URL, type Category, type Computer, type JSONData } from "../../data/data";
 import { ChevronLeft } from "lucide-react";
 
 export function getStaticPaths() {
@@ -15,7 +10,7 @@ export function getStaticPaths() {
     category.computers.map((computer) => ({
       params: {
         generation: category.generation,
-        computer: slugify(computer.name),
+        computer: computer.slug,
       },
       props: { category, computer },
     })),
@@ -33,7 +28,7 @@ const { category, computer } = Astro.props as {
     <div class="flex lg:flex-row flex-col gap-8 min-h-[80vh] items-center lg:justify-start justify-center">
       <div class="lg:w-1/2">
             <a
-      href={`/${category.generation}`}
+      href={`${BASE_URL}${category.generation}`}
       class="flex items-center text-primary sm:text-xl text-base mb-8"
       ><ChevronLeft />Zpět do generace</a
     >
@@ -41,9 +36,9 @@ const { category, computer } = Astro.props as {
         <h2 class="font-display">{computer.article.heading}</h2>
       </div>
       <img
-        src={computer.image.src}
+        src={`${BASE_URL}${computer.image.src}`}
         alt={computer.image.alt}
-        style={{ viewTransitionName: `computer-${slugify(computer.name)}` }}
+        style={{ viewTransitionName: `computer-${computer.slug}` }}
         class="lg:max-h-124 max-h-84 w-full lg:w-1/2 object-contain"
       />
     </div>

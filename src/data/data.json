@@ -7,9 +7,10 @@
       "computers": [
         {
           "name": "Analytický stroj",
+          "slug": "analyticky-stroj",
           "year": 1837,
           "image": {
-            "src": "/categories/nulta/analyticky-stroj.webp",
+            "src": "categories/nulta/analyticky-stroj.webp",
             "alt": "Zkušební model části Babbageova analytického stroje se svislými sloupci ozubených kol"
           },
           "description": "Mechanický počítač, který Charles Babbage navrhl, ale nikdy nedokončil. Přesto v něm byly všechny části dnešního počítače.",
@@ -26,9 +27,10 @@
         },
         {
           "name": "Zuse Z3",
+          "slug": "zuse-z3",
           "year": 1941,
           "image": {
-            "src": "/categories/nulta/zuse-z3.webp",
+            "src": "categories/nulta/zuse-z3.webp",
             "alt": "Replika počítače Zuse Z3 v Deutsches Museum v Mnichově, skříň s relé a ovládací pult"
           },
           "description": "Reléový počítač Konrada Zuseho z Berlína. První fungující programovatelný počítač na světě.",
@@ -45,9 +47,10 @@
         },
         {
           "name": "Harvard Mark I",
+          "slug": "harvard-mark-i",
           "year": 1944,
           "image": {
-            "src": "/categories/nulta/harvard-mark-i.webp",
+            "src": "categories/nulta/harvard-mark-i.webp",
             "alt": "Levá část počítače Harvard Mark I s nápisem Aiken–IBM Automatic Sequence Controlled Calculator"
           },
           "description": "Patnáct metrů dlouhý elektromechanický kolos, který IBM postavila pro Harvardovu univerzitu.",
@@ -71,9 +74,10 @@
       "computers": [
         {
           "name": "Colossus",
+          "slug": "colossus",
           "year": 1944,
           "image": {
-            "src": "/categories/prvni/colossus.webp",
+            "src": "categories/prvni/colossus.webp",
             "alt": "Rekonstrukce počítače Colossus v National Museum of Computing v Bletchley Parku"
           },
           "description": "Tajný britský počítač z Bletchley Parku, který luštil šifry německého vrchního velení.",
@@ -90,9 +94,10 @@
         },
         {
           "name": "ENIAC",
+          "slug": "eniac",
           "year": 1946,
           "image": {
-            "src": "/categories/prvni/eniac.webp",
+            "src": "categories/prvni/eniac.webp",
             "alt": "Panely počítače ENIAC vystavené na Pensylvánské univerzitě s propojovacími kabely"
           },
           "description": "Třicet tun, 17 tisíc elektronek a první univerzální elektronický počítač, o kterém se smělo mluvit.",
@@ -109,9 +114,10 @@
         },
         {
           "name": "UNIVAC I",
+          "slug": "univac-i",
           "year": 1951,
           "image": {
-            "src": "/categories/prvni/univac-i.webp",
+            "src": "categories/prvni/univac-i.webp",
             "alt": "Ovládací konzole počítače UNIVAC I s řadami přepínačů a kontrolek"
           },
           "description": "První americký počítač na prodej. Proslavil se tím, že v televizi předpověděl výsledek prezidentských voleb.",
@@ -135,9 +141,10 @@
       "computers": [
         {
           "name": "IBM 1401",
+          "slug": "ibm-1401",
           "year": 1959,
           "image": {
-            "src": "/categories/druha/ibm-1401.webp",
+            "src": "categories/druha/ibm-1401.webp",
             "alt": "Sestava IBM 1401 s páskovými jednotkami, diskovou jednotkou, konzolí a tiskárnou"
           },
           "description": "Tranzistorový počítač pro firmy, kterého se prodalo přes deset tisíc kusů. Takový Ford T mezi počítači.",
@@ -154,9 +161,10 @@
         },
         {
           "name": "IBM 7090",
+          "slug": "ibm-7090",
           "year": 1959,
           "image": {
-            "src": "/categories/druha/ibm-7090.webp",
+            "src": "categories/druha/ibm-7090.webp",
             "alt": "Skupina lidí stojí u počítače IBM 7090 v NASA Ames Research Center"
           },
           "description": "Tranzistorový sálový počítač, na kterém NASA počítala lety prvních amerických astronautů.",
@@ -173,9 +181,10 @@
         },
         {
           "name": "DEC PDP-1",
+          "slug": "dec-pdp-1",
           "year": 1959,
           "image": {
-            "src": "/categories/druha/pdp-1.webp",
+            "src": "categories/druha/pdp-1.webp",
             "alt": "Počítač DEC PDP-1 s kulatou obrazovkou a dálnopisem v Computer History Museum"
           },
           "description": "Malý a relativně levný počítač od DEC. Studenti z MIT na něm napsali jednu z prvních videoher.",
@@ -199,9 +208,10 @@
       "computers": [
         {
           "name": "IBM System/360",
+          "slug": "ibm-system-360",
           "year": 1964,
           "image": {
-            "src": "/categories/treti/ibm-system-360.webp",
+            "src": "categories/treti/ibm-system-360.webp",
             "alt": "Sestava IBM System/360 Model 20 s červenými skříněmi, řídicím panelem, tiskárnou a děrovačem štítků v Living Computer Museum v Seattlu"
           },
           "description": "Celá rodina počítačů, na kterých běžel stejný software. IBM na ni vsadila celou firmu.",
@@ -218,9 +228,10 @@
         },
         {
           "name": "DEC PDP-8",
+          "slug": "dec-pdp-8",
           "year": 1965,
           "image": {
-            "src": "/categories/treti/pdp-8.webp",
+            "src": "categories/treti/pdp-8.webp",
             "alt": "Minipočítač DEC PDP-8 s kouřově skleněnou skříní a předním panelem s rozsvícenými kontrolkami a přepínači"
           },
           "description": "První úspěšný minipočítač. Vešel se na stůl a stál zlomek ceny sálových strojů.",
@@ -237,9 +248,10 @@
         },
         {
           "name": "Apollo Guidance Computer",
+          "slug": "apollo-guidance-computer",
           "year": 1966,
           "image": {
-            "src": "/categories/treti/apollo-guidance-computer.webp",
+            "src": "categories/treti/apollo-guidance-computer.webp",
             "alt": "Pozlacená skříň počítače Apollo Guidance Computer a vedle ní ovládací jednotka DSKY s klávesnicí a displejem"
           },
           "description": "Palubní počítač misí Apollo. Jeden z prvních počítačů postavených z integrovaných obvodů.",
@@ -263,9 +275,10 @@
       "computers": [
         {
           "name": "Altair 8800",
+          "slug": "altair-8800",
           "year": 1975,
           "image": {
-            "src": "/categories/ctvrta/altair-8800.webp",
+            "src": "categories/ctvrta/altair-8800.webp",
             "alt": "Počítač Altair 8800 v modré skříni s řadou přepínačů a kontrolek na předním panelu"
           },
           "description": "Stavebnice s procesorem Intel 8080, která spustila éru domácích počítačů a dala vzniknout Microsoftu.",
@@ -282,9 +295,10 @@
         },
         {
           "name": "Apple II",
+          "slug": "apple-ii",
           "year": 1977,
           "image": {
-            "src": "/categories/ctvrta/apple-ii.webp",
+            "src": "categories/ctvrta/apple-ii.webp",
             "alt": "Počítač Apple II s monitorem a dvěma disketovými mechanikami Disk II"
           },
           "description": "Hotový počítač s barevnou grafikou, který se dal koupit, zapojit a rovnou používat.",
@@ -301,9 +315,10 @@
         },
         {
           "name": "IBM PC",
+          "slug": "ibm-pc",
           "year": 1981,
           "image": {
-            "src": "/categories/ctvrta/ibm-pc.webp",
+            "src": "categories/ctvrta/ibm-pc.webp",
             "alt": "Osobní počítač IBM PC 5150 s monitorem a klávesnicí"
           },
           "description": "Počítač, ze kterého vzešel standard PC. Většina dnešních stolních počítačů je jeho vzdáleným potomkem.",
@@ -327,9 +342,10 @@
       "computers": [
         {
           "name": "IBM Quantum System One",
+          "slug": "ibm-quantum-system-one",
           "year": 2019,
           "image": {
-            "src": "/categories/budoucnost/ibm-quantum-system-one.webp",
+            "src": "categories/budoucnost/ibm-quantum-system-one.webp",
             "alt": "Kvantový počítač IBM Quantum System One s válcovým chladicím systémem"
           },
           "description": "První kvantový počítač, který se dal objednat jako hotový produkt. Uvnitř je chladněji než ve vesmíru.",
@@ -346,9 +362,10 @@
         },
         {
           "name": "Google Sycamore",
+          "slug": "google-sycamore",
           "year": 2019,
           "image": {
-            "src": "/categories/budoucnost/sycamore.webp",
+            "src": "categories/budoucnost/sycamore.webp",
             "alt": "Kvantový procesor Google Sycamore v kovovém pouzdře s nápisy Google a Sycamore"
           },
           "description": "Kvantový procesor, na kterém Google v roce 2019 předvedl takzvanou kvantovou nadřazenost.",
@@ -365,9 +382,10 @@
         },
         {
           "name": "Frontier",
+          "slug": "frontier",
           "year": 2022,
           "image": {
-            "src": "/categories/budoucnost/frontier.webp",
+            "src": "categories/budoucnost/frontier.webp",
             "alt": "Skříně superpočítače Frontier v Oak Ridge National Laboratory s logem Frontier"
           },
           "description": "První superpočítač, který oficiálně překonal hranici jednoho exaFLOPSu, tedy trilionu výpočtů za sekundu.",

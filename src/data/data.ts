@@ -1,3 +1,5 @@
+export const BASE_URL = import.meta.env.BASE_URL;
+
 export interface JSONData {
   categories: Category[];
 }
@@ -28,6 +30,7 @@ export interface Category {
 
 export interface Computer {
   name: string;
+  slug: string;
   year: number;
   image: {
     src: string;
@@ -46,14 +49,4 @@ export interface ComputerArticle {
 interface Source {
   link: string;
   label: string;
-}
-
-// "IBM System/360" -> "ibm-system-360"
-export function slugify(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
 }

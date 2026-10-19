@@ -1,6 +1,7 @@
 {
   "name": "tpw1a-semestralni-projekt",
   "type": "module",
+  "homepage": "https://ondrejfilip1.github.io/tpw1a-semestralni-projekt/",
   "version": "0.0.1",
   "engines": {
     "node": ">=22.12.0"
@@ -11,7 +12,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",
-    "deploy": "astro build && touch dist/.nojekyll && gh-pages -d dist --dotfiles"
+    "deploy": "astro build && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.1",

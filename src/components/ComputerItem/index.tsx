@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { slugify, type Categories, type Computer } from "../../data/data";
+import { BASE_URL, type Categories, type Computer } from "../../data/data";
 
 interface ComputerItemProps {
   shouldFlip: boolean;
@@ -23,14 +23,14 @@ export default function ComputerItem(props: ComputerItemProps) {
         className={`flex-1 relative ${props.shouldFlip ? "sm:order-first" : ""}`}
       >
         <a
-          href={`/${props.generation}/${slugify(props.computer.name)}`}
+          href={`${BASE_URL}${props.generation}/${props.computer.slug}`}
           className="peer"
         >
           <img
-            src={props.computer.image.src}
+            src={`${BASE_URL}${props.computer.image.src}`}
             alt={props.computer.image.alt}
             style={{
-              viewTransitionName: `computer-${slugify(props.computer.name)}`,
+              viewTransitionName: `computer-${props.computer.slug}`,
             }}
             className="sm:max-h-124 max-h-64 w-full object-contain hover:blur-md transition-[filter]"
             loading="lazy"

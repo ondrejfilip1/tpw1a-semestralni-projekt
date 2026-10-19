@@ -8,7 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [react()],
   output: "static",
-
+  base: "/tpw1a-semestralni-projekt/",
   vite: {
     plugins: [tailwindcss()],
   },

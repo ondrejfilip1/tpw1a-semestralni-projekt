@@ -4,6 +4,8 @@ import projectData from "../data/data.json";
 import type { Category, JSONData } from "../data/data";
 import { ChevronLeft } from "lucide-react";
 import ComputerItem from "../components/ComputerItem";
+import { BASE_URL } from "../data/data";
+import Heading from "../components/Heading";
 
 export function getStaticPaths() {
   const { categories } = projectData as JSONData;
@@ -19,10 +21,10 @@ const { category } = Astro.props as { category: Category };
 <Layout title={category.name}>
   <main class="md:px-12 px-4">
     <div class="min-h-screen flex flex-col justify-center gap-8">
-      <a href="/" class="flex items-center text-primary sm:text-xl text-base"
+      <a href={BASE_URL} class="flex items-center text-primary sm:text-xl text-base"
         ><ChevronLeft />Zpět na úvod</a
       >
-      <h1>{category.name}</h1>
+      <Heading client:load text={category.name} />
       <div
         class="sm:text-xl text-base indent-12 max-w-2xl text-justify text-primary"
         set:html={category.description}
