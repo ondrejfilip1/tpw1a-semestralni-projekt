@@ -1,12 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import projectData from "../../data/data.json";
-import { BASE_URL, type Category, type Computer, type JSONData } from "../../data/data";
+import {
+  BASE_URL,
+  data,
+  type Category,
+  type Computer,
+} from "../../data/data";
 import { ChevronLeft } from "lucide-react";
 
 export function getStaticPaths() {
-  const { categories } = projectData as JSONData;
-  return categories.flatMap((category) =>
+  return data.categories.flatMap((category) =>
     category.computers.map((computer) => ({
       params: {
         generation: category.generation,
@@ -17,23 +20,27 @@ export function getStaticPaths() {
   );
 }
 
-const { category, computer } = Astro.props as {
+interface Props {
   category: Category;
   computer: Computer;
-};
+}
+
+const { category, computer } = Astro.props;
 ---
 
 <Layout title={computer.name}>
-  <main class="md:px-12 px-4 container flex flex-col gap-8 mb-24">
-    <div class="flex lg:flex-row flex-col gap-8 min-h-[80vh] items-center lg:justify-start justify-center">
-      <div class="lg:w-1/2">
-            <a
-      href={`${BASE_URL}${category.generation}`}
-      class="flex items-center text-primary sm:text-xl text-base mb-8"
-      ><ChevronLeft />Zpět do generace</a
+  <main class="md:px-wider px-base container flex flex-col gap-wide mb-section">
+    <div
+      class="flex lg:flex-row flex-col gap-wide min-h-[80vh] items-center lg:justify-start justify-center"
     >
-        <p class="text-tertiary sm:text-xl text-base">{computer.year}</p>
-        <h2 class="font-display">{computer.article.heading}</h2>
+      <div class="lg:w-1/2">
+        <a
+          href={`${BASE_URL}${category.generation}`}
+          class="flex items-center text-primary sm:text-lead text-body mb-wide"
+          ><ChevronLeft />Zpět do generace</a
+        >
+        <p class="text-tertiary sm:text-lead text-body">{computer.year}</p>
+        <h1 class="heading-2 font-display">{computer.article.heading}</h1>
       </div>
       <img
         src={`${BASE_URL}${computer.image.src}`}
@@ -43,14 +50,14 @@ const { category, computer } = Astro.props as {
       />
     </div>
     <div
-      class="sm:text-xl text-base text-justify text-primary flex flex-col gap-4 [&_h3]:text-3xl [&_h3]:text-tertiary [&_h3]:mt-4"
+      class="sm:text-lead text-body text-justify text-primary flex flex-col gap-base [&_h3]:text-subheading [&_h3]:text-tertiary [&_h3]:mt-base"
       set:html={computer.article.article}
     />
     {
       computer.article.sources.length > 0 && (
-        <section class="flex flex-col gap-2">
-          <h3 class="text-3xl text-tertiary">Zdroje</h3>
-          <ul class="list-disc pl-6 sm:text-xl text-base">
+        <section class="flex flex-col gap-tight">
+          <h3 class="text-subheading text-tertiary">Zdroje</h3>
+          <ul class="list-disc pl-relaxed sm:text-lead text-body">
             {computer.article.sources.map((source) => (
               <li>
                 <a

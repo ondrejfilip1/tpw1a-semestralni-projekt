@@ -2,17 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import CategoriesSelector from "../components/CategoriesSelector";
 import Heading from "../components/Heading";
+import { data } from "../data/data";
 ---
 
 <Layout>
   <div
-    class="min-h-screen flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-12 px-4 md:gap-12 gap-4"
+    class="min-h-screen flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-wider px-base md:gap-wider gap-base"
   >
     <div class="md:w-[70%] md:text-left text-center">
       <Heading client:load text={"Historie\npočítačů"} />
     </div>
-    <div class="md:w-[30%] flex flex-col gap-6">
-      <h2 class="font-sans">Generace</h2><CategoriesSelector />
+    <div class="md:w-[30%] flex flex-col gap-relaxed">
+      <h2 class="font-sans">Generace</h2><CategoriesSelector categories={data.categories} />
     </div>
   </div>
 </Layout>

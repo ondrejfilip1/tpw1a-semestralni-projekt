@@ -1,13 +1,23 @@
 ---
 import Header from "../components/Header";
 import "../styles/global.css";
-import { BASE_URL } from "../data/data";
+import { BASE_URL, data, type SearchItem } from "../data/data";
 
 interface Props {
   title?: string;
 }
 
 const { title } = Astro.props;
+
+// do prohlizece posilame jen to, co vyhledavani potrebuje
+// name, year, url
+const searchItems: SearchItem[] = data.categories.flatMap((category) =>
+  category.computers.map((computer) => ({
+    name: computer.name,
+    year: computer.year,
+    url: `${BASE_URL}${category.generation}/${computer.slug}`,
+  })),
+);
 ---
 
 <html lang="cs">
@@ -20,7 +30,7 @@ const { title } = Astro.props;
     <title>{title ? `${title} | Historie počítačů` : "Historie počítačů"}</title>
   </head>
   <body>
-    <Header />
+    <Header client:load searchItems={searchItems} />
     <slot />
   </body>
 </html>

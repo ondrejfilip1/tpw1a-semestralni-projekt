@@ -1,44 +1,44 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import projectData from "../data/data.json";
-import type { Category, JSONData } from "../data/data";
+import { BASE_URL, data, type Category } from "../data/data";
 import { ChevronLeft } from "lucide-react";
 import ComputerItem from "../components/ComputerItem";
-import { BASE_URL } from "../data/data";
 import Heading from "../components/Heading";
 
 export function getStaticPaths() {
-  const { categories } = projectData as JSONData;
-  return categories.map((item) => ({
+  return data.categories.map((item) => ({
     params: { generation: item.generation },
     props: { category: item },
   }));
 }
 
-const { category } = Astro.props as { category: Category };
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
 ---
 
 <Layout title={category.name}>
-  <main class="md:px-12 px-4">
-    <div class="min-h-screen flex flex-col justify-center gap-8">
-      <a href={BASE_URL} class="flex items-center text-primary sm:text-xl text-base"
+  <main class="md:px-wider px-base">
+    <div class="min-h-screen flex flex-col justify-center gap-wide">
+      <a href={BASE_URL} class="flex items-center text-primary sm:text-lead text-body"
         ><ChevronLeft />Zpět na úvod</a
       >
       <Heading client:load text={category.name} />
       <div
-        class="sm:text-xl text-base indent-12 max-w-2xl text-justify text-primary"
+        class="sm:text-lead text-body indent-wider max-w-2xl text-justify text-primary"
         set:html={category.description}
       />
     </div>
 
-    <section class="flex gap-24 flex-col mb-24">
+    <section class="flex gap-section flex-col mb-section">
       {
         category.computers.map((item, index) => {
           // karty zmeni poradi, kdyz jsou liche
           const shouldFlip: boolean = index % 2 == 1;
 
           return <ComputerItem
-              client:visible
               computer={item}
               shouldFlip={shouldFlip}
               generation={category.generation}

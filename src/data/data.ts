@@ -1,3 +1,5 @@
+import projectData from "./data.json";
+
 export const BASE_URL = import.meta.env.BASE_URL;
 
 export interface JSONData {
@@ -12,18 +14,10 @@ export type Categories =
   | "ctvrta"
   | "budoucnost";
 
-export const CATEGORIES_LABELS = [
-  "Nultá",
-  "První",
-  "Druhá",
-  "Třetí",
-  "Čtvrtá",
-  "Budoucnost",
-];
-
 export interface Category {
   generation: Categories;
   name: string;
+  label: string;
   description: string;
   computers: Computer[];
 }
@@ -46,7 +40,16 @@ export interface ComputerArticle {
   sources: Source[];
 }
 
+// zkracena polozka pro vyhledavani, aby se do prohlizece neposilaly cele clanky
+export interface SearchItem {
+  name: string;
+  year: number;
+  url: string;
+}
+
 interface Source {
   link: string;
   label: string;
 }
+
+export const data = projectData as JSONData;
