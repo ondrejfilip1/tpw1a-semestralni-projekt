@@ -4,6 +4,7 @@
       "generation": "nulta",
       "name": "Nultá generace",
       "label": "Nultá",
+      "period": "Od 1837 po 1945",
       "description": "<p>Ještě než přišla elektronika, počítalo se ozubenými koly, hřídelemi a později elektromagnetickými relé. Takovým strojům se říká nultá generace. Byly hlučné, pomalé a často velké jako obývák, ale už v nich najdeme to podstatné: program oddělený od dat, paměť a jednotku, která provádí výpočty.</p><p>Období se obvykle počítá zhruba do poloviny 40. let 20. století. Relé se ale používala i později, například v prvním československém počítači SAPO, který Antonín Svoboda dokončil v roce 1957 a který o tři roky později shořel.</p>",
       "computers": [
         {
@@ -42,7 +43,7 @@
               { "link": "https://cs.wikipedia.org/wiki/Z3", "label": "Wikipedie: Z3" },
               { "link": "https://en.wikipedia.org/wiki/Z3_(computer)", "label": "Wikipedia (EN): Z3 (computer)" },
               { "link": "https://en.wikipedia.org/wiki/Konrad_Zuse", "label": "Wikipedia (EN): Konrad Zuse" },
-              { "link": "https://commons.wikimedia.org/wiki/File:Z3_Deutsches_Museum_b.jpg", "label": "Fotografie: Venusianer, Wikimedia Commons, CC BY-SA 3.0" }
+              { "link": "https://commons.wikimedia.org/wiki/File:Z3_Deutsches_Museum_b.jpg", "label": "Fotografie: Venusianer, úprava Georgfotoart, Wikimedia Commons, CC BY-SA 3.0" }
             ]
           }
         },
@@ -72,6 +73,7 @@
       "generation": "prvni",
       "name": "První generace",
       "label": "První",
+      "period": "Od 1945 po 1958",
       "description": "<p>První generace počítačů vsadila na elektronky. Elektronka umí přepínat proud tisíckrát rychleji než relé, protože se v ní nic nehýbe. Háček je v tom, že se hřeje, žere spoustu energie a dřív nebo později praskne. Počítače s desítkami tisíc elektronek proto zabíraly celé sály a technici v nich neustále měnili vadné kusy.</p><p>Tato éra trvala zhruba od roku 1945 do konce 50. let. Programovalo se většinou přímo ve strojovém kódu a pamětí byly rtuťové zpožďovací linky, magnetické bubny nebo obrazovky. U nás do ní patří počítač EPOS Antonína Svobody, i když ten byl dokončen až v době, kdy ve světě nastupovaly tranzistory.</p>",
       "computers": [
         {
@@ -140,6 +142,7 @@
       "generation": "druha",
       "name": "Druhá generace",
       "label": "Druhá",
+      "period": "Od 1956 po 1964",
       "description": "<p>V roce 1947 sestrojili v Bellových laboratořích první tranzistor. Dělá v podstatě totéž co elektronka, ale je menší, nehřeje se tolik, spotřebuje zlomek energie a vydrží skoro věčně. Koncem 50. let se tranzistory dostaly do počítačů a ty se rázem zmenšily, zlevnily a hlavně přestaly pořád odcházet.</p><p>Druhá generace (zhruba 1956 až 1964) přinesla také feritovou paměť a první vyšší programovací jazyky, hlavně FORTRAN a COBOL. Programátor už nemusel psát jen jedničky a nuly, a počítače si tak začaly kupovat banky, pojišťovny a univerzity.</p>",
       "computers": [
         {
@@ -208,6 +211,7 @@
       "generation": "treti",
       "name": "Třetí generace",
       "label": "Třetí",
+      "period": "Od 1964 po 1971",
       "description": "<p>Jack Kilby z Texas Instruments a Robert Noyce z Fairchildu nezávisle na sobě přišli v letech 1958 a 1959 na to, jak dát několik tranzistorů a dalších součástek na jeden kousek křemíku. Tak vznikl integrovaný obvod. V 60. letech se tyto čipy dostaly do počítačů a ty se znovu zmenšily a zrychlily.</p><p>Třetí generace (zhruba 1964 až 1971) je hlavně o tom, jak se s počítači pracuje. Objevily se operační systémy, sdílení času, kdy na jednom stroji pracuje víc lidí najednou přes terminály, a celé rodiny vzájemně kompatibilních počítačů. Vedle sálových strojů se začaly prodávat i minipočítače, které se vešly do laboratoře.</p>",
       "computers": [
         {
@@ -276,6 +280,7 @@
       "generation": "ctvrta",
       "name": "Čtvrtá generace",
       "label": "Čtvrtá",
+      "period": "Od 1971 po současnost",
       "description": "<p>V roce 1971 Intel představil čip 4004, na kterém byl celý procesor. Říká se mu mikroprocesor a s ním začíná čtvrtá generace počítačů, ve které vlastně žijeme dodnes. Najednou šlo postavit počítač za cenu lepší televize a dát ho domů nebo do kanceláře na stůl.</p><p>V 70. letech se objevily první stavebnice pro nadšence, v 80. letech osobní počítače pro každého a později notebooky, internet a telefony. Princip ale zůstal stejný: mikroprocesor, na kterém jsou dnes místo dvou tisíc tranzistorů desítky miliard.</p>",
       "computers": [
         {
@@ -344,6 +349,7 @@
       "generation": "budoucnost",
       "name": "Budoucnost",
       "label": "Budoucnost",
+      "period": "Od současnosti dál",
       "description": "<p>Tranzistory na čipech už jsou tak malé, že se počítají v jednotkách nanometrů, a dál je zmenšovat je čím dál těžší. Proto se hledají jiné cesty. Jedna vede k obrovským superpočítačům s desítkami tisíc grafických procesorů, které dnes slouží hlavně vědě a umělé inteligenci. Druhá je úplně jiná: kvantové počítače, které nepočítají s jedničkami a nulami, ale s kvantovými stavy.</p><p>Nikdo zatím přesně neví, jak budou počítače za dvacet let vypadat. Stroje v této kategorii ale ukazují, kterým směrem se vývoj ubírá.</p>",
       "computers": [
         {

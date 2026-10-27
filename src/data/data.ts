@@ -18,6 +18,7 @@ export interface Category {
   generation: Categories;
   name: string;
   label: string;
+  period: string;
   description: string;
   computers: Computer[];
 }

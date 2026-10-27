@@ -19,6 +19,7 @@ export default function Heading(props: HeadingProps) {
     overflow: false,
     range: [65, 90],
     ignore: [" ", "\n"],
+    
   });
 
   return (

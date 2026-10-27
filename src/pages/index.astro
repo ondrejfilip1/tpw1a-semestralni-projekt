@@ -13,7 +13,7 @@ import { data } from "../data/data";
       <Heading client:load text={"Historie\npočítačů"} />
     </div>
     <div class="md:w-[30%] flex flex-col gap-relaxed">
-      <h2 class="font-sans">Generace</h2><CategoriesSelector categories={data.categories} />
+      <CategoriesSelector client:load categories={data.categories} />
     </div>
   </div>
 </Layout>
