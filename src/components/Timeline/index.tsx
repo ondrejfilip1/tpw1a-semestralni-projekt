@@ -1,15 +1,15 @@
 import { CircleDot } from "lucide-react";
-import type { JSONData } from "../../data/data";
+import type { Category } from "../../data/data";
 import { BASE_URL } from "../../data/data";
 
 interface TimelineProps {
-  categories: JSONData;
+  categories: Category[];
 }
 
 export default function Timeline(props: TimelineProps) {
   return (
     <div className="flex md:flex-row flex-col w-full md:overflow-hidden min-h-timeline px-roomy">
-      {props.categories.categories.map((value, index) => (
+      {props.categories.map((value, index) => (
         <div
           key={index}
           className="flex md:flex-row flex-col not-last:w-full items-center not-last:justify-center"
@@ -23,7 +23,7 @@ export default function Timeline(props: TimelineProps) {
               </p>
             </div>
           </a>
-          {index !== props.categories.categories.length - 1 && (
+          {index !== props.categories.length - 1 && (
             <div className="md:w-full w-px bg-line h-[8vh] md:h-px md:mx-micro my-micro md:my-0"></div>
           )}
         </div>
