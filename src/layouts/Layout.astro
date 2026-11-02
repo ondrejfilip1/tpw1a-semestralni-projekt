@@ -30,7 +30,7 @@ const searchItems: SearchItem[] = data.categories.flatMap((category) =>
     <title>{title ? `${title} | Historie počítačů` : "Historie počítačů"}</title>
   </head>
   <body>
-    <Header client:load searchItems={searchItems} />
+    <Header client:load searchItems={searchItems} currentPath={Astro.url.pathname} />
     <slot />
   </body>
 </html>

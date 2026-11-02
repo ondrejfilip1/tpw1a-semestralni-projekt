@@ -36,12 +36,12 @@ export default function SearchInput(props: SearchInputProps) {
         setIsOpen(false);
         break;
       case "Enter":
-        window.location.replace(results[0].url)
+        if (results.length > 0) window.location.replace(results[0].url);
         break;
       default:
         break;
     }
-  }
+  };
 
   return (
     <div className="relative" onBlur={handleBlur}>

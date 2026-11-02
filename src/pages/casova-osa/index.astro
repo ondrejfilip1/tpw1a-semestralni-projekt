@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { data } from "../../data/data";
+import Timeline from "../../components/Timeline";
+---
+
+<Layout>
+  <div
+    class="min-h-screen flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-wider px-base md:gap-wider gap-base"
+  >
+    <Timeline categories={data}/>
+  </div>
+</Layout>
