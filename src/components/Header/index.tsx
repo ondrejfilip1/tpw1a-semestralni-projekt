@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BASE_URL, type SearchItem } from "../../data/data";
 import SearchInput from "./SearchInput";
-import { ChevronLeft, RotateCwClock } from "lucide-react";
+import { ChevronLeft, Info, RotateCwClock } from "lucide-react";
 
 interface HeaderProps {
   searchItems: SearchItem[];
@@ -33,13 +33,22 @@ export default function Header(props: HeaderProps) {
     >
       <SearchInput items={props.searchItems} />
 
-      <a
-        href={isTimeline ? BASE_URL : `${BASE_URL}casova-osa`}
-        className="flex justify-between gap-base px-4 py-2 transition-colors outline-none sm:text-lead text-body items-center"
-      >
-        {isTimeline ? <ChevronLeft /> : <RotateCwClock />}
-        <span>{isTimeline ? "Zpět na úvod" : "Časová osa"}</span>
-      </a>
+      <nav className="flex items-center">
+        <a
+          href={`${BASE_URL}o-nas`}
+          className="flex justify-between gap-base px-4 py-2 transition-colors outline-none sm:text-lead text-body items-center"
+        >
+          <Info />
+          <span>O nás</span>
+        </a>
+        <a
+          href={isTimeline ? BASE_URL : `${BASE_URL}casova-osa`}
+          className="flex justify-between gap-base px-4 py-2 transition-colors outline-none sm:text-lead text-body items-center"
+        >
+          {isTimeline ? <ChevronLeft /> : <RotateCwClock />}
+          <span>{isTimeline ? "Zpět na úvod" : "Časová osa"}</span>
+        </a>
+      </nav>
     </div>
   );
 }

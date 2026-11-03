@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ComputerMosaic from "../../components/ComputerMosaic";
+import Heading from "../../components/Heading";
+import { data } from "../../data/data";
+---
+
+<Layout title="O nás">
+  <main
+    class="grid md:grid-cols-[2fr_3fr] md:items-center gap-wider md:px-wider px-base pt-section pb-wider min-h-svh"
+  >
+    <ComputerMosaic categories={data.categories} />
+
+    <article class="flex flex-col gap-relaxed max-w-[65ch] sm:text-lead text-body">
+      <Heading client:load text="O nás" />
+      <p>
+        Historie počítačů je online průvodce vývojem výpočetní techniky, od
+        ozubených kol Analytického stroje až po kvantové procesory. Každou
+        generaci představujeme na několika konkrétních strojích, protože na nich
+        je nejlíp vidět, co se změnilo a proč na tom záleželo.
+      </p>
+      <p>
+        Web vznikl na zakázku{" "}
+        <a
+          href="https://www.tmbrno.cz"
+          class="text-tertiary underline underline-offset-2 hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary"
+          >Technického muzea v Brně</a
+        >, které sídlí v Králově Poli na Purkyňově ulici a jako samostatná
+        instituce funguje od roku 1961. Muzeum chtělo průvodce, který návštěvníky
+        navnadí ještě před cestou do expozic a školám poslouží jako podklad do
+        výuky.
+      </p>
+      <p>
+        Texty proto píšeme srozumitelně a bez zbytečné odbornosti. U každého
+        článku uvádíme zdroje, aby si je mohl ověřit každý, kdo chce jít do
+        hloubky.
+      </p>
+    </article>
+  </main>
+</Layout>

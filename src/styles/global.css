@@ -36,6 +36,22 @@ body {
   @apply md:text-heading-lg text-heading leading-tight tracking-tight text-tertiary;
 }
 
+@utility duotone {
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: color-mix(
+    in oklab,
+    theme(colors.primary),
+    theme(colors.tertiary) calc(var(--step) * 100%)
+  );
+
+  & img {
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+  }
+}
+
 @layer base {
   h1 {
     @apply heading-1;
