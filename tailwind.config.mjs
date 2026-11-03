@@ -36,7 +36,7 @@ export default {
         "timeline-label": "7.5rem",
       },
       minHeight: {
-        timeline: "8rem",
+        timeline: "9rem",
       },
       fontFamily: {
         sans: ["Khand", "serif"],
