@@ -82,7 +82,7 @@ export default function SearchInput(props: SearchInputProps) {
               >
                 <a
                   href={value.url}
-                  className="flex justify-between gap-base px-4 py-2 transition-colors outline-none"
+                  className="flex justify-between gap-base px-4 py-2 transition-colors focus-visible:outline-offset-[-2px]"
                 >
                   <span className="truncate">{value.name}</span>
                   <span className="text-tertiary">{value.year}</span>

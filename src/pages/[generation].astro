@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { BASE_URL, data, type Category } from "../data/data";
-import { ChevronLeft } from "lucide-react";
-import ComputerItem from "../components/ComputerItem";
+import { data, type Category } from "../data/data";
+import ComputerCollection from "../components/ComputerCollection";
 import Heading from "../components/Heading";
 
 export function getStaticPaths() {
@@ -20,31 +19,17 @@ const { category } = Astro.props;
 ---
 
 <Layout title={category.name}>
-  <main class="md:px-wider px-base">
-    <div class="min-h-screen flex flex-col justify-center gap-wide">
-      <a href={BASE_URL} class="flex items-center text-primary sm:text-lead text-body"
-        ><ChevronLeft />Zpět na úvod</a
-      >
+  <main id="main" class="md:px-wider px-base">
+    <ComputerCollection
+      client:load
+      computers={category.computers}
+      generation={category.generation}
+    >
       <Heading client:load text={category.name} />
       <div
         class="sm:text-lead text-body indent-wider max-w-2xl text-justify text-primary"
         set:html={category.description}
       />
-    </div>
-
-    <section class="flex gap-section flex-col mb-section">
-      {
-        category.computers.map((item, index) => {
-          // karty zmeni poradi, kdyz jsou liche
-          const shouldFlip: boolean = index % 2 == 1;
-
-          return <ComputerItem
-              computer={item}
-              shouldFlip={shouldFlip}
-              generation={category.generation}
-            />;
-        })
-      }
-    </section>
+    </ComputerCollection>
   </main>
 </Layout>

@@ -23,6 +23,8 @@ export default function CategoriesSelector(props: CategoriesSelectorProps) {
                 {...category}
                 onMouseEnter={() => { setHovered(category); setIsHovering(true); }}
                 onMouseLeave={() => setIsHovering(false)}
+                onFocus={() => { setHovered(category); setIsHovering(true); }}
+                onBlur={() => setIsHovering(false)}
               />
           ))}
       </div>

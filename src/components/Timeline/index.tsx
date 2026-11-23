@@ -35,6 +35,8 @@ export default function Timeline(props: TimelineProps) {
               className="group outline-none"
               onMouseOver={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              onFocus={() => setHoveredIndex(index)}
+              onBlur={() => setHoveredIndex(null)}
             >
               <div className="text-center relative">
                 <CircleDot className="mx-auto rounded-full group-hover:scale-150 group-focus-visible:scale-150 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-tertiary transition-transform" />
@@ -47,7 +49,7 @@ export default function Timeline(props: TimelineProps) {
               </div>
             </a>
             {index !== props.categories.length - 1 && (
-              <div className="md:w-full w-0.5 bg-line h-[8vh] md:h-0.5 md:mx-micro my-micro md:my-0" />
+              <div className="md:w-full w-0.5 bg-line h-[8svh] md:h-0.5 md:mx-micro my-micro md:my-0" />
             )}
           </div>
         ))}

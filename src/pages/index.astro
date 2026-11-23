@@ -6,8 +6,9 @@ import { data } from "../data/data";
 ---
 
 <Layout>
-  <div
-    class="min-h-screen flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-wider px-base md:gap-wider gap-base"
+  <main
+    id="main"
+    class="min-h-svh flex md:flex-row flex-col justify-center items-center w-full flex-1 md:px-wider px-base md:gap-wider gap-base"
   >
     <div class="md:w-[70%] md:text-left text-center">
       <Heading client:load text={"Historie\npočítačů"} />
@@ -15,5 +16,5 @@ import { data } from "../data/data";
     <div class="md:w-[30%] flex flex-col gap-relaxed">
       <CategoriesSelector client:load categories={data.categories} />
     </div>
-  </div>
+  </main>
 </Layout>
