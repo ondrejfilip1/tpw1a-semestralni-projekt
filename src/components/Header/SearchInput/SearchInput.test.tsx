@@ -17,7 +17,7 @@ const items: SearchItem[] = [
 // vykresluju komponentu
 const setup = () => {
   render(<SearchInput items={items} />);
-  return screen.getByRole("textbox", { name: /vyhledat počítač/i });
+  return screen.getByRole("combobox", { name: /vyhledat počítač/i });
 };
 
 describe("SearchInput", () => {

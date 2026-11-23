@@ -51,6 +51,8 @@ export default function SearchInput(props: SearchInputProps) {
           type="text"
           name="search"
           id="search"
+          role="combobox"
+          aria-autocomplete="list"
           placeholder=""
           autoComplete="off"
           aria-controls="search-results"
