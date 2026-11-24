@@ -5,9 +5,13 @@ import { BASE_URL, data, type SearchItem } from "../data/data";
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "Online průvodce vývojem výpočetní techniky od Analytického stroje až po kvantové procesory. Generace počítačů, časová osa a články se zdroji.",
+} = Astro.props;
 
 // do prohlizece posilame jen to, co vyhledavani potrebuje
 // name, year, url
@@ -26,6 +30,7 @@ const searchItems: SearchItem[] = data.categories.flatMap((category) =>
     <link rel="icon" type="image/svg+xml" href={`${BASE_URL}favicon.svg`} />
     <link rel="icon" href={`${BASE_URL}favicon.ico`} />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{title ? `${title} | Historie počítačů` : "Historie počítačů"}</title>
   </head>

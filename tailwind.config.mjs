@@ -11,6 +11,7 @@ export default {
         primary: "#2A1A0E",
         secondary: "#F4AE52",
         tertiary: "#D4621A",
+        link: "#A84A0F",
       },
       spacing: {
         micro: "0.25rem",
