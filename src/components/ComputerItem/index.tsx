@@ -19,7 +19,7 @@ export default function ComputerItem(props: ComputerItemProps) {
       <div
         className={`flex-1 flex flex-col ${isCard ? "justify-start" : "justify-center"}`}
       >
-        <p className="text-tertiary @min-[38rem]:text-lead text-body">
+        <p className="text-link @min-[38rem]:text-lead text-body">
           {props.computer.year}
         </p>
         <h2 className="font-display">{props.computer.name}</h2>
