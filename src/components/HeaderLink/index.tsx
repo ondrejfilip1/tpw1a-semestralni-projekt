@@ -4,7 +4,7 @@ export interface HeaderLinkProps {
   href: string;
   icon: ReactNode;
   label: string;
-  style: "desktop" | "mobile";
+  style?: "desktop" | "mobile";
 }
 
 export default function HeaderLink(props: HeaderLinkProps) {

@@ -50,13 +50,13 @@ const { category, computer } = Astro.props;
       />
     </div>
     <div
-      class="sm:text-lead text-body text-justify text-primary flex flex-col gap-base [&_h3]:text-subheading [&_h3]:text-tertiary [&_h3]:mt-base"
+      class="sm:text-lead text-body text-justify text-primary flex flex-col gap-base [&_h2]:text-subheading [&_h2]:leading-[calc(2.25/1.875)] [&_h2]:tracking-normal [&_h2]:text-tertiary [&_h2]:mt-base"
       set:html={computer.article.article}
     />
     {
       computer.article.sources.length > 0 && (
         <section class="flex flex-col gap-tight">
-          <h3 class="text-subheading text-tertiary">Zdroje</h3>
+          <h2 class="text-subheading leading-[calc(2.25/1.875)] tracking-normal text-tertiary">Zdroje</h2>
           <ul class="list-disc pl-relaxed sm:text-lead text-body">
             {computer.article.sources.map((source) => (
               <li>
