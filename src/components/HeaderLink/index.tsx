@@ -11,7 +11,7 @@ export default function HeaderLink(props: HeaderLinkProps) {
   return (
     <a
       href={props.href}
-      className={`truncate flex justify-between gap-base px-4 py-2 transition-colors focus-visible:text-tertiary sm:text-lead text-body items-center ${props.style === "desktop" ? "bg-primary" : "text-xl"}`}
+      className={`relative focus-visible:z-10 truncate flex justify-between gap-base px-4 py-2 transition-colors focus-visible:text-tertiary sm:text-lead text-body items-center ${props.style === "desktop" ? "bg-primary" : "text-xl"}`}
     >
       {props.icon}
       <span>{props.label}</span>
